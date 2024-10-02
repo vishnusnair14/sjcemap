@@ -10,11 +10,10 @@ type Location = {
 
 // Define the SJCE-Mysore polygon boundary (latitude, longitude points)
 const GEOFENCE_BOUNDARY: Location[] = [
-  { lat: 12.313751, lng: 76.611938 },
-  { lat: 12.314251, lng: 76.613491 },
-  { lat: 12.312874, lng: 76.613950 },
-  { lat: 12.312402, lng: 76.611896 },
-  { lat: 12.313751, lng: 76.611938 },
+  { lat: 12.318826537540374, lng: 76.60912010901417 },
+  { lat: 12.319252473825248, lng: 76.6174069034744 },
+  { lat: 12.310046591113828, lng: 76.61175813657036 },
+  { lat: 12.311200979425825, lng: 76.61675042811834 },
 ];
 
 // Ray-casting algorithm to check if a point is inside a polygon
