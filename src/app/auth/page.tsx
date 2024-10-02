@@ -114,7 +114,7 @@ const GeoFenceCheck = () => {
         <h2 className="text-3xl font-extrabold text-center text-gray-700 mb-2">
           Authentication
         </h2>
-        <h4 className="text-center mb-8">
+        <h4 className="text-center mb-8 text-black">
           You should be within SJCE-Mysore Campus to use this website
         </h4>
 
