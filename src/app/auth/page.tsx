@@ -68,10 +68,10 @@ const GeoFenceCheck = () => {
               setWithinBoundary(false);
               setLocationError("You are not inside SJCE Mysore Campus!");
             }
-            setLoading(false);
+            setLoading(false); // Ensure loading is set to false after processing
           },
           (error) => {
-            setLoading(false);
+            setLoading(false); // Set loading to false in all error cases
             if (error.code === error.PERMISSION_DENIED) {
               setLocationError("Permission to access location was denied.");
               setPermissionDenied(true);
@@ -90,8 +90,8 @@ const GeoFenceCheck = () => {
           }
         );
       } else {
-        setLocationError("Geolocation is not supported by this browser.");
         setLoading(false);
+        setLocationError("Geolocation is not supported by this browser.");
       }
     };
 
@@ -117,7 +117,7 @@ const GeoFenceCheck = () => {
         {loading && (
           <div className="flex flex-col items-center justify-center">
             <svg
-              className="h-12 w-12 text-blue-600"
+              className="h-12 w-12 text-blue-600 animate-spin" // Added animate-spin for visual feedback
               xmlns="http://www.w3.org/2000/svg"
               fill="none"
               viewBox="0 0 24 24"
@@ -156,7 +156,6 @@ const GeoFenceCheck = () => {
             ) : (
               <p className="text-gray-500 text-center mt-2">
                 You need to be inside the SJCE campus to access the website.
-                Allow permission to continue...
               </p>
             )}
             <a
