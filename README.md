@@ -1,36 +1,30 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# SJCE Map - Campus Navigation App
 
-## Getting Started
+**SJCE Map** is a Next.js-powered web application designed to help users easily navigate the SJCE campus. The app provides accurate directions, real-time location updates, and 360-degree views of key locations on campus. Whether you're a student, faculty member, or visitor, SJCE Map makes it simple to find buildings, labs, cafeterias, and other points of interest.
 
-First, run the development server:
+## Key Features:
+- **Interactive Campus Map**: Browse and interact with a comprehensive map of the SJCE campus.
+- **360-Degree Views**: Explore detailed, panoramic views of major campus spots to help with orientation.
+- **Real-time Directions**: Get turn-by-turn directions to any location on campus, ensuring you're never lost.
+- **Search & Filter Locations**: Quickly search for buildings, departments, or landmarks and filter results based on your preferences.
+- **Mobile-Friendly**: Fully responsive design optimized for mobile, so you can access it on-the-go.
+- **Fast & Scalable**: Built with Next.js for fast load times and smooth performance.
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+## Technologies Used:
+- **Next.js**: For server-side rendering and static site generation.
+- **React**: For creating reusable UI components.
+- **Mapbox/Leaflet.js**: For rendering interactive maps.
+- **Framer Motion**: For smooth, engaging animations.
+- **Tailwind CSS**: For highly customizable and responsive UI designs.
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## Installation & Setup:
+To run this project locally, follow these steps:
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+1. **Clone the repository**:
+   ```bash
+   git clone https://github.com/your-username/sjce-map.git
+   cd sjce-map
+   
+   npm install
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
-
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+   npm run dev
