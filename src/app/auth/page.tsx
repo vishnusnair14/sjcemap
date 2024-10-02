@@ -67,7 +67,7 @@ const GeoFenceCheck = () => {
             } else {
               setWithinBoundary(false);
               setLocationError(
-                "You are outside the allowed geofence boundary."
+                "You are not inside SJCE Mysore Campus!"
               );
             }
             setLoading(false);
