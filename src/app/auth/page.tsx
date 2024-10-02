@@ -1,4 +1,4 @@
-"use client"
+"use client";
 
 import { useEffect, useState } from "react";
 import { useRouter } from "next/navigation";
@@ -74,7 +74,7 @@ const GeoFenceCheck = () => {
             setLoading(false);
             if (error.code === error.PERMISSION_DENIED) {
               setLocationError("Permission to access location was denied.");
-               setPermissionDenied(true);
+              setPermissionDenied(true);
             } else if (error.code === error.POSITION_UNAVAILABLE) {
               setLocationError("Location information is unavailable.");
             } else if (error.code === error.TIMEOUT) {
@@ -143,7 +143,7 @@ const GeoFenceCheck = () => {
         )}
 
         {locationError && (
-          <div className="bg-red-50 p-4 rounded-lg mt-6 flex flex-col items-center transition duration-300">
+          <div className="bg-red-50 p-6 rounded-lg mt-6 flex flex-col items-center transition duration-300">
             <FaExclamationCircle className="text-red-500 text-4xl mb-4" />
             <p className="text-jssorange font-bold text-lg text-center">
               {locationError}
@@ -155,7 +155,8 @@ const GeoFenceCheck = () => {
               </p>
             ) : (
               <p className="text-gray-500 text-center mt-2">
-                You need to be inside the SJCE campus to access the website. Allow permission to continue...
+                You need to be inside the SJCE campus to access the website.
+                Allow permission to continue...
               </p>
             )}
             <a
@@ -172,17 +173,6 @@ const GeoFenceCheck = () => {
             Authentication success, please wait...
           </p>
         )}
-
-        {/* {permissionDenied && !loading && (
-          <div className="mt-6 flex flex-col items-center">
-            <p className="text-yellow-600 font-bold text-lg mb-2">
-              Permission Denied!
-            </p>
-            <p className="text-gray-500 text-center">
-              Please enable location permissions in your browser settings.
-            </p>
-          </div>
-        )} */}
       </div>
     </div>
   );
