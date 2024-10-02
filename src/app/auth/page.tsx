@@ -8,39 +8,37 @@ type Location = {
   lng: number;
 };
 
-// SJCE-Mysore centeroid
-const GEOFENCE_CENTER: Location = {
-  lat: 12.313821120398465,
-  lng: 76.61261886700615,
-};
+// Define the SJCE-Mysore polygon boundary (latitude, longitude points)
+const GEOFENCE_BOUNDARY: Location[] = [
+  { lat: 12.313751, lng: 76.611938 },
+  { lat: 12.314251, lng: 76.613491 },
+  { lat: 12.312874, lng: 76.613950 },
+  { lat: 12.312402, lng: 76.611896 },
+  { lat: 12.313751, lng: 76.611938 },
+];
 
-const GEOFENCE_RADIUS = 1;
+// Ray-casting algorithm to check if a point is inside a polygon
+const isPointInPolygon = (point: Location, polygon: Location[]) => {
+  let isInside = false;
+  for (let i = 0, j = polygon.length - 1; i < polygon.length; j = i++) {
+    const xi = polygon[i].lat,
+      yi = polygon[i].lng;
+    const xj = polygon[j].lat,
+      yj = polygon[j].lng;
+
+    const intersect =
+      yi > point.lng !== yj > point.lng &&
+      point.lat < ((xj - xi) * (point.lng - yi)) / (yj - yi) + xi;
+    if (intersect) isInside = !isInside;
+  }
+  return isInside;
+};
 
 const GeoFenceCheck = () => {
   const router = useRouter();
   const [loading, setLoading] = useState(true);
   const [locationError, setLocationError] = useState("");
   const [withinBoundary, setWithinBoundary] = useState(false);
-
-  const isWithinGeofence = (userLocation: Location) => {
-    const toRadians = (degrees: number) => (degrees * Math.PI) / 180;
-    const earthRadius = 6371000;
-
-    const dLat = toRadians(GEOFENCE_CENTER.lat - userLocation.lat);
-    const dLng = toRadians(GEOFENCE_CENTER.lng - userLocation.lng);
-
-    const a =
-      Math.sin(dLat / 2) * Math.sin(dLat / 2) +
-      Math.cos(toRadians(userLocation.lat)) *
-        Math.cos(toRadians(GEOFENCE_CENTER.lat)) *
-        Math.sin(dLng / 2) *
-        Math.sin(dLng / 2);
-
-    const c = 2 * Math.atan2(Math.sqrt(a), Math.sqrt(1 - a));
-    const distance = earthRadius * c;
-
-    return distance <= GEOFENCE_RADIUS;
-  };
 
   const playAlertSound = () => {
     const audio = new Audio("/sound/auth-success.mp3");
@@ -60,7 +58,7 @@ const GeoFenceCheck = () => {
               lng: position.coords.longitude,
             };
 
-            if (isWithinGeofence(userLocation)) {
+            if (isPointInPolygon(userLocation, GEOFENCE_BOUNDARY)) {
               setWithinBoundary(true);
               setTimeout(() => {
                 sessionStorage.setItem("authenticated", "true"); // Set authentication flag
