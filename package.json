@@ -1,0 +1,37 @@
+{
+  "name": "jssstumap",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint"
+  },
+  "dependencies": {
+    "@headlessui/react": "^2.1.8",
+    "@iconify/react": "^5.0.2",
+    "clsx": "^2.1.1",
+    "framer-motion": "^11.5.4",
+    "jssstumap": "file:",
+    "next": "^14.2.11",
+    "react": "^18",
+    "react-dom": "^18",
+    "react-slick": "^0.30.2",
+    "react-spring-bottom-sheet": "^3.4.1",
+    "react-swipeable": "^7.0.1",
+    "sharp": "^0.33.5",
+    "slick-carousel": "^1.8.1",
+    "tailwind-merge": "^2.5.2"
+  },
+  "devDependencies": {
+    "@types/node": "^20",
+    "@types/react": "^18",
+    "@types/react-dom": "^18",
+    "eslint": "^8",
+    "eslint-config-next": "14.2.11",
+    "postcss": "^8",
+    "tailwindcss": "^3.4.1",
+    "typescript": "^5"
+  }
+}

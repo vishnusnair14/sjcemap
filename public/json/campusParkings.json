@@ -1,0 +1,67 @@
+[
+    {
+        "spot_name": "Main Parking",
+        "description": "The primary parking area located at the center of the campus, providing easy access to main buildings and facilities. It accommodates a high volume of vehicles and is designed for students, visitors, and faculty.",
+        "image": "https://firebasestorage.googleapis.com/v0/b/sjce-map.appspot.com/o/SJCE-MAP-IMAGES%2FSJCE_MAIN_PARKING_IMG.png?alt=media&token=adfbd720-840a-49c4-bd8f-a538ea84de5d",
+        "latitude": 12.314763514418177,
+        "longitude": 76.61383296727564,
+        "google_360_view_url": "https://www.google.com/maps/embed?pb=!4v1713459549432!6m8!1m7!1sCAoSLEFGMVFpcE02MjYzaG85MnZ0NnhSbjRqSVhkX0VLTHdBSVktMWM2TXFLWmxi!2m2!1d12.313441633525!2d76.613355715936!3f260!4f10!5f0.7820865974627469",
+        "id": "main_parking",
+        "google_image_url_1": "",
+        "google_image_url_2": "https://example.com/google_image_2.jpg",
+        "google_image_url_3": "https://example.com/google_image_3.jpg",
+        "google_image_url_4": "https://example.com/google_image_4.jpg"
+    },
+    {
+        "spot_name": "Staff Parking 1",
+        "description": "Dedicated parking for faculty and staff, situated close to administrative buildings. This area ensures convenient access for employees, promoting efficient movement within the campus.",
+        "image": "https://firebasestorage.googleapis.com/v0/b/sjce-map.appspot.com/o/SJCE-MAP-IMAGES%2FNO_IMAGE_FOUND_IMG.jpg?alt=media&token=ec64235b-374c-458a-aaf9-7dc67c110513",
+        "latitude": 0.0,
+        "longitude": 0.0,
+        "google_360_view_url": "",
+        "id": "staff_parking_1",
+        "google_image_url_1": "",
+        "google_image_url_2": "https://example.com/google_image_2.jpg",
+        "google_image_url_3": "https://example.com/google_image_3.jpg",
+        "google_image_url_4": "https://example.com/google_image_4.jpg"
+    },
+    {
+        "spot_name": "Staff Parking 2",
+        "description": "An additional staff parking area located further from the main facilities but still within reasonable walking distance. This space is intended for overflow parking for staff members.",
+        "image": "https://firebasestorage.googleapis.com/v0/b/sjce-map.appspot.com/o/SJCE-MAP-IMAGES%2FNO_IMAGE_FOUND_IMG.jpg?alt=media&token=ec64235b-374c-458a-aaf9-7dc67c110513",
+        "latitude": 0.0,
+        "longitude": 0.0,
+        "google_360_view_url": "",
+        "id": "staff_parking_2",
+        "google_image_url_1": "",
+        "google_image_url_2": "https://example.com/google_image_2.jpg",
+        "google_image_url_3": "https://example.com/google_image_3.jpg",
+        "google_image_url_4": "https://example.com/google_image_4.jpg"
+    },
+    {
+        "spot_name": "Parking Lot 1",
+        "description": "A smaller, secondary parking lot that serves both students and visitors. It is designed to accommodate additional vehicles when the main parking area is full, featuring easy access to campus pathways.",
+        "image": "https://firebasestorage.googleapis.com/v0/b/sjce-map.appspot.com/o/SJCE-MAP-IMAGES%2FNO_IMAGE_FOUND_IMG.jpg?alt=media&token=ec64235b-374c-458a-aaf9-7dc67c110513",
+        "latitude": 0.0,
+        "longitude": 0.0,
+        "google_360_view_url": "",
+        "id": "parking_lot_1",
+        "google_image_url_1": "",
+        "google_image_url_2": "https://example.com/google_image_2.jpg",
+        "google_image_url_3": "https://example.com/google_image_3.jpg",
+        "google_image_url_4": "https://example.com/google_image_4.jpg"
+    },
+    {
+        "spot_name": "Parking Lot 2",
+        "description": "Another auxiliary parking area, primarily aimed at providing extra space during peak times, such as events or busy class schedules. It is strategically located to support foot traffic to various campus locations.",
+        "image": "https://firebasestorage.googleapis.com/v0/b/sjce-map.appspot.com/o/SJCE-MAP-IMAGES%2FNO_IMAGE_FOUND_IMG.jpg?alt=media&token=ec64235b-374c-458a-aaf9-7dc67c110513",
+        "latitude": 0.0,
+        "longitude": 0.0,
+        "google_360_view_url": "",
+        "id": "parking_lot_2",
+        "google_image_url_1": "",
+        "google_image_url_2": "https://example.com/google_image_2.jpg",
+        "google_image_url_3": "https://example.com/google_image_3.jpg",
+        "google_image_url_4": "https://example.com/google_image_4.jpg"
+    }
+]

@@ -1,0 +1,202 @@
+[
+    {
+        "description": "",
+        "image": "https://firebasestorage.googleapis.com/v0/b/sjce-map.appspot.com/o/SJCE-MAP-IMAGES%2FJSSSTU_ADMIN_BLOCK_IMG.png?alt=media&token=6038d84f-e252-4d7d-a6f2-7fce1ffe1624",
+        "latitude": 12.313137169349451,
+        "longitude": 76.61362793950654,
+        "google_360_view_url": "https://www.google.com/maps/embed?pb=!4v1727630504496!6m8!1m7!1sCAoSLEFGMVFpcE8yUzM2R3l1Ry13djRmM3pDWTZqeldMQW5GWnhlZGZ2d1ZIRjF0!2m2!1d12.31352666726196!2d76.61326368931043!3f80!4f10!5f0.7820865974627469",
+        "spot_name": "Admin Block",
+        "id": "admin_block",
+        "images": [
+            "https://firebasestorage.googleapis.com/v0/b/sjce-map.appspot.com/o/SJCE-MAP-IMAGES%2FADMIN_BLOCK_IMG1.jpg?alt=media&token=7d65761e-7673-46c7-8064-1f1e774425e5",
+            "https://firebasestorage.googleapis.com/v0/b/sjce-map.appspot.com/o/SJCE-MAP-IMAGES%2Fspot_google_images%2FMainSpotImages%2FJSSTU_ADMIN_BLOCK%2FJSSSTU_ADMIN_BOCK_SGI_2.png?alt=media&token=9b3398b5-4cb7-4612-b3de-ab31853ae8ec",
+            "https://firebasestorage.googleapis.com/v0/b/sjce-map.appspot.com/o/SJCE-MAP-IMAGES%2Fspot_google_images%2FMainSpotImages%2FJSSTU_ADMIN_BLOCK%2FJSSSTU_ADMIN_BOCK_SGI_4.png?alt=media&token=f4b43a96-cbd7-433f-b42c-6f171dfee3d1",
+            "https://firebasestorage.googleapis.com/v0/b/sjce-map.appspot.com/o/SJCE-MAP-IMAGES%2FJSSSTU_ADMIN_BLOCK_IMG.png?alt=media&token=6038d84f-e252-4d7d-a6f2-7fce1ffe1624"
+        ]
+    },
+    {
+        "description": "",
+        "image": "https://firebasestorage.googleapis.com/v0/b/sjce-map.appspot.com/o/SJCE-MAP-IMAGES%2FCMS_IMG.jpg?alt=media&token=177715c5-ac17-487a-b691-02482e819ef4",
+        "latitude": 12.317903742754853,
+        "longitude": 76.61392949203932,
+        "google_360_view_url": "https://www.google.com/maps/embed?pb=!4v1713461009567!6m8!1m7!1sCAoSLEFGMVFpcE9wUGxkWGRGZkFEWnFXNkRzVlQwaEJuNDNoOHhRQURjRnFRTkdX!2m2!1d12.313257930373!2d76.613447409616!3f158.36542473313!4f-1.2738945497310112!5f0.7820865974627469",
+        "spot_name": "CMS Block",
+        "id": "cms_block",
+        "images": [
+            "https://firebasestorage.googleapis.com/v0/b/sjce-map.appspot.com/o/SJCE-MAP-IMAGES%2FCMS_IMG.jpg?alt=media&token=177715c5-ac17-487a-b691-02482e819ef4"
+        ]
+    },
+    {
+        "description": "The Ganapathi Temple, located within the campus, is a serene and sacred space dedicated to Lord Ganesha, the remover of obstacles and the deity of wisdom and intellect. Surrounded by lush greenery, the temple provides a tranquil environment for students, faculty, and visitors seeking spiritual solace. Its architectural design reflects traditional Indian temple aesthetics, featuring intricate carvings and a peaceful ambiance that encourages meditation and prayer. ",
+        "image": "https://firebasestorage.googleapis.com/v0/b/sjce-map.appspot.com/o/SJCE-MAP-IMAGES%2FSJCE_GANAPATHI_TEMPLE_IMG.png?alt=media&token=593659bf-b7ab-42bc-ad2e-8cdec0a37395",
+        "latitude": 12.312978641023266,
+        "longitude": 76.61279978958855,
+        "google_360_view_url": "https://www.google.com/maps/embed?pb=!4v1713459725554!6m8!1m7!1sCAoSLEFGMVFpcFA0UVZDN2JPRDRjeVhwbzdkYTZ6eUdYU1ZKNnBxLWEwVW0xV3RE!2m2!1d12.313794435123!2d76.613323271448!3f214.47344001259216!4f-13.048173567669082!5f0.7820865974627469",
+        "spot_name": "Ganapathi Temple",
+        "id": "ganapathi_temple",
+        "images": [
+            "https://firebasestorage.googleapis.com/v0/b/sjce-map.appspot.com/o/SJCE-MAP-IMAGES%2FSJCE_GANAPATHI_TEMPLE_IMG.png?alt=media&token=593659bf-b7ab-42bc-ad2e-8cdec0a37395",
+            "https://firebasestorage.googleapis.com/v0/b/sjce-map.appspot.com/o/SJCE-MAP-IMAGES%2Fspot_google_images%2FMainSpotImages%2FSJCE_GANPATHI_TEMPLE%2FSJCE_GANAPATHI_TEMPLE_SGI_1.png?alt=media&token=fb6bc222-4e31-4b9e-9aed-9ce7625614e3",
+            "https://firebasestorage.googleapis.com/v0/b/sjce-map.appspot.com/o/SJCE-MAP-IMAGES%2Fspot_google_images%2FMainSpotImages%2FSJCE_GANPATHI_TEMPLE%2FSJCE_GANAPATHI_TEMPLE_SGI_2.png?alt=media&token=862c1d01-4b81-4ad2-8d9e-7b78f4e703cc",
+            "https://firebasestorage.googleapis.com/v0/b/sjce-map.appspot.com/o/SJCE-MAP-IMAGES%2Fspot_google_images%2FMainSpotImages%2FSJCE_GANPATHI_TEMPLE%2FSJCE_GANAPATHI_TEMPLE_SGI_3.png?alt=media&token=d1bd4278-6219-4c82-852e-4da874c3635b"
+        ]
+    },
+    {
+        "description": "",
+        "image": "https://firebasestorage.googleapis.com/v0/b/sjce-map.appspot.com/o/SJCE-MAP-IMAGES%2FGJB_IMG.jpg?alt=media&token=8328bc2a-dca5-4dc6-96f6-f1e42781bd3d",
+        "latitude": 12.316361913563465,
+        "longitude": 76.61390373132981,
+        "google_360_view_url": "https://www.google.com/maps/embed?pb=!4v1727630972317!6m8!1m7!1sCAoSLEFGMVFpcE9wTnUtbmdZVnhaTWpPRHJnTmRydVQ2UmlHTUFySm1XU3dMV1Fr!2m2!1d12.3133428930687!2d76.6135834191698!3f151.99461035700077!4f2.4346169285636563!5f0.7820865974627469",
+        "spot_name": "Golden Jubilee Bhavan",
+        "id": "golden_jubilee_block",
+        "images": [
+            "https://firebasestorage.googleapis.com/v0/b/sjce-map.appspot.com/o/SJCE-MAP-IMAGES%2FGJB_IMG.jpg?alt=media&token=8328bc2a-dca5-4dc6-96f6-f1e42781bd3d",
+            "https://firebasestorage.googleapis.com/v0/b/sjce-map.appspot.com/o/SJCE-MAP-IMAGES%2Fspot_google_images%2FMainSpotImages%2FGOLDEN_JUBILEE_BLOCK%2FGOLDEN_JUBILEE_BLOCK_SGI_1.png?alt=media&token=155f0665-ab71-478e-afee-4a1dbf6ffa9d",
+            "https://firebasestorage.googleapis.com/v0/b/sjce-map.appspot.com/o/SJCE-MAP-IMAGES%2Fspot_google_images%2FMainSpotImages%2FGOLDEN_JUBILEE_BLOCK%2FGOLDEN_JUBILEE_BLOCK_SGI_2.png?alt=media&token=86af4722-6730-4fd4-aff9-c263c08eedd2",
+            "https://firebasestorage.googleapis.com/v0/b/sjce-map.appspot.com/o/SJCE-MAP-IMAGES%2Fspot_google_images%2FMainSpotImages%2FGOLDEN_JUBILEE_BLOCK%2FGOLDEN_JUBILEE_BLOCK_SGI_3.png?alt=media&token=4f4b4b28-556e-482e-9134-88ebac9974c0",
+            "https://firebasestorage.googleapis.com/v0/b/sjce-map.appspot.com/o/SJCE-MAP-IMAGES%2Fspot_google_images%2FMainSpotImages%2FGOLDEN_JUBILEE_BLOCK%2FGOLDEN_JUBILEE_BLOCK_SGI_4.png?alt=media&token=40949a90-fa41-4e6d-adbd-4d7981cceed4"
+        ]
+    },
+    {
+        "description": "JSS Polytechnic for the Differently Abled (JSSPDA) is the first polytechnic of its kind in the country and the only polytechnic in the state of Karnataka started in the year 1991-92 to offer professional diploma courses exclusively for differently-abled students. The institution aims to empower students with disabilities by providing them with quality technical education and skill development opportunities, enabling them to become self-reliant and contributing members of society.",
+        "image": "https://firebasestorage.googleapis.com/v0/b/sjce-map.appspot.com/o/SJCE-MAP-IMAGES%2FJSS_POLYTECHNIQUE_COLLEGE_IMG.jpg?alt=media&token=8e05740e-b354-428e-9e2d-7f253d56275f",
+        "latitude": 12.31746727532039,
+        "longitude": 76.61343870281996,
+        "google_360_view_url": "https://www.google.com/maps/embed?pb=!4v1713459234871!6m8!1m7!1sCAoSLEFGMVFpcFBoRE4yX2pWdDNvTnhSSDBEYzIyTnBta2dqZVhGT1ZrM1BsdnBH!2m2!1d12.313361368301!2d76.613611768274!3f18.37083210136704!4f-8.24042315302708!5f0.7820865974627469",
+        "spot_name": "JSS Polytechnic (JSSPDA)",
+        "id": "jss_polytechnique_college",
+        "images": [
+            "https://firebasestorage.googleapis.com/v0/b/sjce-map.appspot.com/o/SJCE-MAP-IMAGES%2FJSS_POLYTECHNIQUE_COLLEGE_IMG.jpg?alt=media&token=8e05740e-b354-428e-9e2d-7f253d56275f",
+            "https://firebasestorage.googleapis.com/v0/b/sjce-map.appspot.com/o/SJCE-MAP-IMAGES%2Fspot_google_images%2FMainSpotImages%2FPOLYTECHNIQUE_COLLEGE%2FJSS_POLYTECHNIQUE_CLG_SGI_1.png?alt=media&token=e9ad265e-104a-4ce3-9149-0e0aab2f0cf9",
+            "https://firebasestorage.googleapis.com/v0/b/sjce-map.appspot.com/o/SJCE-MAP-IMAGES%2Fspot_google_images%2FMainSpotImages%2FPOLYTECHNIQUE_COLLEGE%2FJSS_POLYTECHNIQUE_CLG_SGI_2.png?alt=media&token=e6d97d76-e7c3-484f-bed3-b592416a0713",
+            "https://firebasestorage.googleapis.com/v0/b/sjce-map.appspot.com/o/SJCE-MAP-IMAGES%2Fspot_google_images%2FMainSpotImages%2FPOLYTECHNIQUE_COLLEGE%2FJSS_POLYTECHNIQUE_CLG_SGI_3.png?alt=media&token=61f0bda9-fd33-4be3-86e3-f763aa8452dd",
+            "https://firebasestorage.googleapis.com/v0/b/sjce-map.appspot.com/o/SJCE-MAP-IMAGES%2Fspot_google_images%2FMainSpotImages%2FPOLYTECHNIQUE_COLLEGE%2FJSS_POLYTECHNIQUE_CLG_SGI_4.png?alt=media&token=c2fefbf8-1bb4-4489-bfb7-cc38f0f5679a"
+        ]
+    },
+    {
+        "description": "JSSSTU is known for its placement record, with top companies from diverse fields recruiting on campus. JSS Science and Technology University equips students for successful careers from day one. Our robust curriculum goes beyond textbooks, with a strong emphasis on language proficiency.",
+        "image": "https://firebasestorage.googleapis.com/v0/b/sjce-map.appspot.com/o/SJCE-MAP-IMAGES%2FSJCE_PLACEMENT_CEL_IMG.png?alt=media&token=66a7eaae-7656-49d7-8528-9a500d24c74f",
+        "latitude": 12.316361913563465,
+        "longitude": 76.61390373132981,
+        "google_360_view_url": "https://www.google.com/maps/embed?pb=!4v1727632416743!6m8!1m7!1sCAoSLEFGMVFpcE9pamJscHd0c2p0ODVzemRpZ3p0YUhEOUEzY0lnNGF5T2gyV1Vh!2m2!1d12.31329650507589!2d76.61351651133329!3f220!4f0!5f0.7820865974627469",
+        "spot_name": "Placement Cell",
+        "id": "placement_cell",
+        "images": [
+            "https://firebasestorage.googleapis.com/v0/b/sjce-map.appspot.com/o/SJCE-MAP-IMAGES%2FSJCE_PLACEMENT_CEL_IMG.png?alt=media&token=66a7eaae-7656-49d7-8528-9a500d24c74f"
+        ]
+    },
+    {
+        "description": "The department of Physical Education & sports was established in 1963. Physical education is an integral part of the educational programme designed to promote the optimum development of an individual. It makes one emotionally, mentally, and physically strong. The primary aim of physical education has varied based on the needs of the time and place. Sport is commonly defined as an organized, competitive, and skillful physical activity requiring commitment and fair play.",
+        "image": "https://firebasestorage.googleapis.com/v0/b/sjce-map.appspot.com/o/SJCE-MAP-IMAGES%2FBASKETBALL_COURT_IMG.jpg?alt=media&token=fee1b8c9-9e22-4093-8f0f-6b27fa858cca",
+        "latitude": 12.312822228067683,
+        "longitude": 76.61434396946316,
+        "google_360_view_url": "https://www.google.com/maps/embed?pb=!4v1727764494808!6m8!1m7!1sCAoSLEFGMVFpcE5HVHRqQWNZSkttTUpPY1pVU1l5LUdqbzdBWFhlQ19SaEdTbGlZ!2m2!1d12.31329648615608!2d76.6134764900283!3f81.93693376222112!4f-2.4211820180740204!5f0.7820865974627469",
+        "spot_name": "SJCE Basket Court",
+        "id": "sjce_basket_court",
+        "images": [
+            "https://firebasestorage.googleapis.com/v0/b/sjce-map.appspot.com/o/SJCE-MAP-IMAGES%2FBASKETBALL_COURT_IMG.jpg?alt=media&token=fee1b8c9-9e22-4093-8f0f-6b27fa858cca",
+            "https://firebasestorage.googleapis.com/v0/b/sjce-map.appspot.com/o/SJCE-MAP-IMAGES%2Fspot_google_images%2FMainSpotImages%2FSJCE_BASKETBALL_COURT%2FSJCE_BASKET_BALL_COURT_SGI_1.png?alt=media&token=9435d58f-cfbb-462b-9beb-578bd1355427",
+            "https://firebasestorage.googleapis.com/v0/b/sjce-map.appspot.com/o/SJCE-MAP-IMAGES%2Fspot_google_images%2FMainSpotImages%2FSJCE_BASKETBALL_COURT%2FSJCE_BASKET_BALL_COURT_SGI_2.png?alt=media&token=e753cabc-4d9d-448b-be0d-7a3acb1d2001"
+        ]
+    },
+    {
+        "description": "The College has separate hostel facilities for about 570 boys [UG-515 and PG (M.Tech & MCA only) – 55]. The boys’ hostel is located in the college premises, in Block-1 (M), Block-2 (H), Block-3 (L), PG Block and GH Blocks (1,2,5 & 6), all located on the north-end of the campus. The hostel runs a mess. Also RO System for drinking water (24 hours), Electricity though back up (24 hours), Hot water facility (Geyser), a separate TV room, reading hall (News paper), Wi-Fi internet facility and Parking lot for two wheelers are provided in the Boys’ Hostel.",
+        "image": "https://firebasestorage.googleapis.com/v0/b/sjce-map.appspot.com/o/SJCE-MAP-IMAGES%2FSJCE_BOYS_HOSTEL_IMG.png?alt=media&token=8630a01e-32f2-4060-bf0d-15632275c8ef",
+        "latitude": 12.31256336743031,
+        "longitude": 76.61384471219527,
+        "google_360_view_url": "https://www.google.com/maps/embed?pb=!4v1719738744005!6m8!1m7!1sCAoSLEFGMVFpcFBrQ2ZkV0dKbnJXaXlfVngxR3NWVlBoWURxeG1kcTNGa3lPVU5s!2m2!1d12.313486627936!2d76.613099222058!3f37.8159357979477!4f-4.11657429879628!5f0.7820865974627469",
+        "spot_name": "SJCE Boys Hostel",
+        "id": "sjce_boys_hostel",
+        "images": [
+            "https://firebasestorage.googleapis.com/v0/b/sjce-map.appspot.com/o/SJCE-MAP-IMAGES%2FSJCE_BOYS_HOSTEL_IMG.png?alt=media&token=8630a01e-32f2-4060-bf0d-15632275c8ef",
+            "https://firebasestorage.googleapis.com/v0/b/sjce-map.appspot.com/o/SJCE-MAP-IMAGES%2Fspot_google_images%2FMainSpotImages%2FSJCE_BOYS_HOSTEL%2FSJCE_BOYS_HOSTEL_SGI_1.png?alt=media&token=6be246f4-31cb-4ca9-b519-c19250cfbcb8",
+            "https://firebasestorage.googleapis.com/v0/b/sjce-map.appspot.com/o/SJCE-MAP-IMAGES%2Fspot_google_images%2FMainSpotImages%2FSJCE_BOYS_HOSTEL%2FSJCE_BOYS_HOSTEL_SGI_2.png?alt=media&token=d1ef5d1f-9d0c-4d51-b36a-0737eaf468a0",
+            "https://firebasestorage.googleapis.com/v0/b/sjce-map.appspot.com/o/SJCE-MAP-IMAGES%2Fspot_google_images%2FMainSpotImages%2FSJCE_BOYS_HOSTEL%2FSJCE_BOYS_HOSTEL_SGI_3.png?alt=media&token=a67fe5f8-58eb-4029-a88d-7f4d64705c15",
+            "https://firebasestorage.googleapis.com/v0/b/sjce-map.appspot.com/o/SJCE-MAP-IMAGES%2Fspot_google_images%2FMainSpotImages%2FSJCE_BOYS_HOSTEL%2FSJCE_BOYS_HOSTEL_SGI_4.png?alt=media&token=3489570e-16d3-4062-baca-878ab704a978"
+        ]
+    },
+    {
+        "description": "",
+        "image": "https://firebasestorage.googleapis.com/v0/b/sjce-map.appspot.com/o/SJCE-MAP-IMAGES%2FSJCE_GYMNASIUM_IMG.png?alt=media&token=022ff72a-8c2e-44b4-afdd-e89c9546026d",
+        "latitude": 12.312168171249187,
+        "longitude": 76.61437146441843,
+        "google_360_view_url": "https://www.google.com/maps/embed?pb=!4v1719737458352!6m8!1m7!1sCAoSLEFGMVFpcE5ldzFldjFmdWFvTWg5RUNWWXlpVVlyaXZubzdmajJPUkhSNmIx!2m2!1d12.313437189858!2d76.613085381893!3f200!4f10!5f0.7820865974627469",
+        "spot_name": "SJCE Gymnasium",
+        "id": "sjce_gymnasium",
+        "images": [
+            "https://firebasestorage.googleapis.com/v0/b/sjce-map.appspot.com/o/SJCE-MAP-IMAGES%2FSJCE_GYMNASIUM_IMG.png?alt=media&token=022ff72a-8c2e-44b4-afdd-e89c9546026d",
+            "https://firebasestorage.googleapis.com/v0/b/sjce-map.appspot.com/o/SJCE-MAP-IMAGES%2Fspot_google_images%2FMainSpotImages%2FSJCE_GYMNASIUM%2FSJCE_GYMNASIUM_SGI_1.png?alt=media&token=abcfeeef-4690-450c-b8a0-23236c8b77bc",
+            "https://firebasestorage.googleapis.com/v0/b/sjce-map.appspot.com/o/SJCE-MAP-IMAGES%2Fspot_google_images%2FMainSpotImages%2FSJCE_GYMNASIUM%2FSJCE_GYMNASIUM_SGI_3.png?alt=media&token=24f21880-6ea5-49be-836d-640da1dc08ce",
+            "https://firebasestorage.googleapis.com/v0/b/sjce-map.appspot.com/o/SJCE-MAP-IMAGES%2Fspot_google_images%2FMainSpotImages%2FSJCE_GYMNASIUM%2FSJCE_GYMNASIUM_SGI_2.png?alt=media&token=7d88e0e5-0f75-46e8-8a75-8289a8c45197",
+            "https://firebasestorage.googleapis.com/v0/b/sjce-map.appspot.com/o/SJCE-MAP-IMAGES%2Fspot_google_images%2FMainSpotImages%2FSJCE_GYMNASIUM%2FSJCE_GYMNASIUM_SGI_4.png?alt=media&token=379c8c61-0260-4e35-be4b-9b7f3162462f"
+        ]
+    },
+    {
+        "description": "No education would be complete without Physical Education. SJCE has provided equal opportunities in sports too. The students have not only excelled in academics but also in sports.",
+        "image": "https://firebasestorage.googleapis.com/v0/b/sjce-map.appspot.com/o/SJCE-MAP-IMAGES%2FSJCE_CRICKET_GROUND_IMG.png?alt=media&token=a6dad003-c8e4-476a-bd12-36eefe39121e",
+        "latitude": 12.316185291549477,
+        "longitude": 76.61000912530928,
+        "google_360_view_url": "https://www.google.com/maps/embed?pb=!4v1713507251371!6m8!1m7!1sCAoSLEFGMVFpcE5pV0E2dERjV1phc3FKVm1mQlJfUTRfLTlnLXYySkVSaV9FWEQ3!2m2!1d12.313228590713!2d76.613438566568!3f218.50397786326607!4f-24.560221384984786!5f0.4003456029096582",
+        "spot_name": "KCA Cricket Ground",
+        "id": "kca_cricket_ground",
+        "images": [
+            "https://firebasestorage.googleapis.com/v0/b/sjce-map.appspot.com/o/SJCE-MAP-IMAGES%2FSJCE_CRICKET_GROUND_IMG.png?alt=media&token=a6dad003-c8e4-476a-bd12-36eefe39121e"
+        ]
+    },
+    {
+        "description": "This is the description for item 4.",
+        "image": "https://firebasestorage.googleapis.com/v0/b/sjce-map.appspot.com/o/SJCE-MAP-IMAGES%2FQUADRANGLE_IMG.jpg?alt=media&token=ef37e0ca-a535-4b0f-bbe9-7c82433c5904",
+        "latitude": 12.313456850349022,
+        "longitude": 76.6132450411689,
+        "google_360_view_url": "https://www.google.com/maps/embed?pb=!4v1713460119382!6m8!1m7!1sCAoSLEFGMVFpcE9XZGgyVzN0eEFwRHNiX1Z5RFRtVXZuZFZlREgtY256cW5zRlZf!2m2!1d12.313604792995!2d76.613484289277!3f101.2653827712522!4f-6.3710135184768575!5f0.7820865974627469",
+        "spot_name": "Quadrangle",
+        "id": "quadrangle",
+        "images": [
+            "https://firebasestorage.googleapis.com/v0/b/sjce-map.appspot.com/o/SJCE-MAP-IMAGES%2FQUADRANGLE_IMG.jpg?alt=media&token=ef37e0ca-a535-4b0f-bbe9-7c82433c5904",
+            "https://firebasestorage.googleapis.com/v0/b/sjce-map.appspot.com/o/SJCE-MAP-IMAGES%2Fspot_google_images%2FMainSpotImages%2FSJCE_QUADRANGLE%2FSJCE_QUADRANGLE_SGI_2.png?alt=media&token=faaa53ab-2e3f-423b-9e9f-1f351bd95017",
+            "https://firebasestorage.googleapis.com/v0/b/sjce-map.appspot.com/o/SJCE-MAP-IMAGES%2Fspot_google_images%2FMainSpotImages%2FSJCE_QUADRANGLE%2FSJCE_QUADRANGLE_SGI_2.png?alt=media&token=faaa53ab-2e3f-423b-9e9f-1f351bd95017",
+            "https://firebasestorage.googleapis.com/v0/b/sjce-map.appspot.com/o/SJCE-MAP-IMAGES%2Fspot_google_images%2FMainSpotImages%2FSJCE_QUADRANGLE%2FSJCE_QUADRANGLE_1.png?alt=media&token=5abbb715-f845-4fbe-af97-aa8f1c06bcee",
+            "https://firebasestorage.googleapis.com/v0/b/sjce-map.appspot.com/o/SJCE-MAP-IMAGES%2Fspot_google_images%2FMainSpotImages%2FSJCE_QUADRANGLE%2FSJCE_QUADRANGLE_SGI_4.png?alt=media&token=58a2517a-50fc-4ed8-8e6a-643a969ac939"
+        ]
+    },
+    {
+        "description": "",
+        "image": "https://firebasestorage.googleapis.com/v0/b/sjce-map.appspot.com/o/SJCE-MAP-IMAGES%2FSJCE_STEP_IMG.jpg?alt=media&token=8ded69eb-0183-459c-a9ad-9585045d54fd",
+        "latitude": 12.315940490849707,
+        "longitude": 76.61338827137706,
+        "google_360_view_url": "",
+        "spot_name": "STEP Cell",
+        "id": "step_cell",
+        "images": [
+            "https://firebasestorage.googleapis.com/v0/b/sjce-map.appspot.com/o/SJCE-MAP-IMAGES%2FSJCE_STEP_IMG.jpg?alt=media&token=8ded69eb-0183-459c-a9ad-9585045d54fd",
+            "https://firebasestorage.googleapis.com/v0/b/sjce-map.appspot.com/o/SJCE-MAP-IMAGES%2Fspot_google_images%2FMainSpotImages%2FSJCE_STEP_CELL%2FSJCE_STEP_CELL_1.png?alt=media&token=01df76bc-dccd-4ea1-a728-85a8f2257f68",
+            "https://firebasestorage.googleapis.com/v0/b/sjce-map.appspot.com/o/SJCE-MAP-IMAGES%2Fspot_google_images%2FMainSpotImages%2FSJCE_STEP_CELL%2FSJCE_STEP_CELL_2.png?alt=media&token=74daef43-3b3b-4aef-866f-c86c0a4eeb11",
+            "https://firebasestorage.googleapis.com/v0/b/sjce-map.appspot.com/o/SJCE-MAP-IMAGES%2Fspot_google_images%2FMainSpotImages%2FSJCE_STEP_CELL%2FSJCE_STEP_CELL_3.png?alt=media&token=49cd0263-38f7-42d2-96a9-69edfa8c5a36",
+            "https://firebasestorage.googleapis.com/v0/b/sjce-map.appspot.com/o/SJCE-MAP-IMAGES%2Fspot_google_images%2FMainSpotImages%2FSJCE_STEP_CELL%2FSJCE_STEP_CELL_4.png?alt=media&token=961bd22b-e18e-47a4-b881-45f1c7807fbf"
+        ]
+    },
+    {
+        "description": "The College has two ladies hostel facilities for about 380 girls, one located in the south-end of the campus where the accommodation is provided to about 200 students. The other one located in Hootagalli (3kms from college) where the accommodation is provided to about 180 Students and also college provides the bus facility.",
+        "image": "https://firebasestorage.googleapis.com/v0/b/sjce-map.appspot.com/o/SJCE-MAP-IMAGES%2FNO_IMAGE_FOUND_IMG.jpg?alt=media&token=ec64235b-374c-458a-aaf9-7dc67c110513",
+        "latitude": 12.318984071054583,
+        "longitude": 76.61185334134558,
+        "google_360_view_url": "https://www.google.com/maps/embed?pb=!4v1720080806641!6m8!1m7!1sCAoSLEFGMVFpcFBTY0k1ZlZPUEV2VHI5eW9rcnN4bHZ0V2FOM0ZWczZWTWpXcmNH!2m2!1d12.313318807934!2d76.613459431079!3f60!4f20!5f0.7820865974627469",
+        "spot_name": "SJCE Women's Hostel",
+        "id": "sjce_womens_hostel",
+        "images": []
+    },
+    {
+        "description": "",
+        "image": "https://firebasestorage.googleapis.com/v0/b/sjce-map.appspot.com/o/SJCE-MAP-IMAGES%2FSWAMIJI_STATUE_IMG.jpg?alt=media&token=46059fd9-12e1-4c31-9a14-6660584b3664",
+        "latitude": 12.312740658103465,
+        "longitude": 76.61403850743899,
+        "google_360_view_url": "https://www.google.com/maps/embed?pb=!4v1713459277656!6m8!1m7!1sCAoSLEFGMVFpcE0ySWRNRHVvTlRqRnlEb0g5SzQ1OF9lcDE5dDJmaG5vTnNFNzlW!2m2!1d12.313476607889!2d76.613181449865!3f340!4f0!5f0.7820865974627469",
+        "spot_name": "Swamiji Statue",
+        "id": "swamiji_status",
+        "images": [
+            "https://firebasestorage.googleapis.com/v0/b/sjce-map.appspot.com/o/SJCE-MAP-IMAGES%2FSWAMIJI_STATUE_IMG.jpg?alt=media&token=46059fd9-12e1-4c31-9a14-6660584b3664",
+            "https://firebasestorage.googleapis.com/v0/b/sjce-map.appspot.com/o/SJCE-MAP-IMAGES%2Fspot_google_images%2FMainSpotImages%2FSJCE_SWAMIJI_STATUE%2FSJCE_SWAMI_STATUE_SGI_1.png?alt=media&token=332e5f90-d0a8-439e-b263-f45584c1e1d5",
+            "https://firebasestorage.googleapis.com/v0/b/sjce-map.appspot.com/o/SJCE-MAP-IMAGES%2Fspot_google_images%2FMainSpotImages%2FSJCE_SWAMIJI_STATUE%2FSJCE_SWAMIJI_STATUE_SGI_2.png?alt=media&token=896ad301-7f35-4802-9a53-3672469d073f"
+        ]
+    }
+]
