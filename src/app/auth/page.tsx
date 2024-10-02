@@ -14,7 +14,7 @@ const GEOFENCE_CENTER: Location = {
   lng: 76.62641395180198,
 };
 
-const GEOFENCE_RADIUS = 3500;
+const GEOFENCE_RADIUS = 1200;
 
 const GeoFenceCheck = () => {
   const router = useRouter();
