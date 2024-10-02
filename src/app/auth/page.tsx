@@ -168,7 +168,7 @@ const GeoFenceCheck = () => {
         )}
 
         {withinBoundary && !loading && (
-          <p className="text-green-500 text-center">
+          <p className="text-green-600+ text-center">
             Authentication success, please wait...
           </p>
         )}
