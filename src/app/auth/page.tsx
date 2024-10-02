@@ -10,11 +10,11 @@ type Location = {
 
 // SJCE-Mysore centeroid
 const GEOFENCE_CENTER: Location = {
-  lat: 12.335359169082858,
-  lng: 76.62641395180198,
+  lat: 12.313821120398465,
+  lng: 76.61261886700615,
 };
 
-const GEOFENCE_RADIUS = 1200;
+const GEOFENCE_RADIUS = 1;
 
 const GeoFenceCheck = () => {
   const router = useRouter();
