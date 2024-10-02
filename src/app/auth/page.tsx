@@ -2,13 +2,13 @@
 
 import { useEffect, useState } from "react";
 import { useRouter } from "next/navigation";
+import { FaExclamationCircle } from "react-icons/fa";
 
 type Location = {
   lat: number;
   lng: number;
 };
 
-// Define the SJCE-Mysore polygon boundary (latitude, longitude points)
 const GEOFENCE_BOUNDARY: Location[] = [
   { lat: 12.318826537540374, lng: 76.60912010901417 },
   { lat: 12.319252473825248, lng: 76.6174069034744 },
@@ -16,7 +16,6 @@ const GEOFENCE_BOUNDARY: Location[] = [
   { lat: 12.311200979425825, lng: 76.61675042811834 },
 ];
 
-// Ray-casting algorithm to check if a point is inside a polygon
 const isPointInPolygon = (point: Location, polygon: Location[]) => {
   let isInside = false;
   for (let i = 0, j = polygon.length - 1; i < polygon.length; j = i++) {
@@ -38,6 +37,7 @@ const GeoFenceCheck = () => {
   const [loading, setLoading] = useState(true);
   const [locationError, setLocationError] = useState("");
   const [withinBoundary, setWithinBoundary] = useState(false);
+  const [permissionDenied, setPermissionDenied] = useState(false);
 
   const playAlertSound = () => {
     const audio = new Audio("/sound/auth-success.mp3");
@@ -60,21 +60,21 @@ const GeoFenceCheck = () => {
             if (isPointInPolygon(userLocation, GEOFENCE_BOUNDARY)) {
               setWithinBoundary(true);
               setTimeout(() => {
-                sessionStorage.setItem("authenticated", "true"); // Set authentication flag
+                sessionStorage.setItem("authenticated", "true");
                 router.push("/home");
                 playAlertSound();
               }, 500);
             } else {
               setWithinBoundary(false);
-              setLocationError(
-                "You are not inside SJCE Mysore Campus!"
-              );
+              setLocationError("You are not inside SJCE Mysore Campus!");
             }
             setLoading(false);
           },
           (error) => {
+            setLoading(false);
             if (error.code === error.PERMISSION_DENIED) {
               setLocationError("Permission to access location was denied.");
+              setPermissionDenied(true);
             } else if (error.code === error.POSITION_UNAVAILABLE) {
               setLocationError("Location information is unavailable.");
             } else if (error.code === error.TIMEOUT) {
@@ -82,7 +82,6 @@ const GeoFenceCheck = () => {
             } else {
               setLocationError("An unknown error occurred.");
             }
-            setLoading(false);
           },
           {
             enableHighAccuracy: true,
@@ -107,18 +106,18 @@ const GeoFenceCheck = () => {
 
   return (
     <div className="min-h-screen flex items-center justify-center">
-      <div className="bg-white p-8 rounded-lg shadow-lg w-full max-w-md">
-        <h2 className="text-3xl font-extrabold text-center text-gray-700 mb-2">
-          Authentication
+      <div className="bg-white p-8 rounded-2xl shadow-lg w-full max-w-lg m-2">
+        <h2 className="text-3xl font-extrabold text-center text-gray-800 mb-2">
+          USER AUTHENTICATION
         </h2>
-        <h4 className="text-center mb-8 text-black">
-          You should be within SJCE-Mysore Campus to use this website
+        <h4 className="text-center mb-8 text-gray-600">
+          You must be within the SJCE-Mysore campus to proceed.
         </h4>
 
         {loading && (
           <div className="flex flex-col items-center justify-center">
             <svg
-              className="animate-spin h-8 w-8 text-blue-500"
+              className="h-12 w-12 text-blue-600"
               xmlns="http://www.w3.org/2000/svg"
               fill="none"
               viewBox="0 0 24 24"
@@ -137,23 +136,27 @@ const GeoFenceCheck = () => {
                 d="M4 12a8 8 0 018-8V0C5.373 0 0 5.373 0 12h4zm2 5.291A7.962 7.962 0 014 12H0c0 3.042 1.135 5.824 3 7.938l3-2.647z"
               ></path>
             </svg>
-            <p className="text-blue-500 text-center mt-4">
-              Checking your geo-location...
+            <p className="text-blue-600 text-center mt-4">
+              Verifying your location...
             </p>
           </div>
         )}
 
         {locationError && (
-          <div className="bg-red-100 p-4 rounded-lg mt-4">
-            <p className="text-red-500 text-center">{locationError}</p>
-            <div className="mt-4 flex justify-center">
-              <a
-                href="/home"
-                className="text-blue-500 underline hover:text-blue-700"
-              >
-                Redirect anyways
-              </a>
-            </div>
+          <div className="bg-red-50 p-6 rounded-lg mt-6 flex flex-col items-center transition duration-300">
+            <FaExclamationCircle className="text-red-500 text-4xl mb-4" />
+            <p className="text-jssorange font-bold text-lg text-center">
+              {locationError}
+            </p>
+            <p className="text-gray-500 text-center mt-2">
+              You need to be inside the SJCE campus to access the website.
+            </p>
+            <a
+              href="/home"
+              className="mt-6 px-6 py-3 bg-jssblue text-white rounded-full transition duration-300"
+            >
+              Redirect anyways
+            </a>
           </div>
         )}
 
@@ -161,6 +164,17 @@ const GeoFenceCheck = () => {
           <p className="text-green-500 text-center">
             Authentication success, please wait...
           </p>
+        )}
+
+        {permissionDenied && !loading && (
+          <div className="mt-6 flex flex-col items-center">
+            <p className="text-yellow-600 font-bold text-lg mb-2">
+              Permission Denied!
+            </p>
+            <p className="text-gray-500 text-center">
+              Please enable location permissions in your browser settings.
+            </p>
+          </div>
         )}
       </div>
     </div>
