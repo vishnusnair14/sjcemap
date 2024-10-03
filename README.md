@@ -22,7 +22,7 @@ To run this project locally, follow these steps:
 
 1. **Clone the repository**:
    ```bash
-   git clone https://github.com/your-username/sjce-map.git
+   gh repo clone vishnusnair14/sjcemap
    cd sjce-map
 
 2. **Install npm packages**:
