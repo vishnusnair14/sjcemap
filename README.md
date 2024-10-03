@@ -23,7 +23,7 @@ To run this project locally, follow these steps:
 1. **Clone the repository**:
    ```bash
    gh repo clone vishnusnair14/sjcemap
-   cd sjce-map
+   cd sjcemap
 
 2. **Install npm packages**:
    ```bash
