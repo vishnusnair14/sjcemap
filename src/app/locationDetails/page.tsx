@@ -7,7 +7,7 @@ import { useRouter, useSearchParams } from "next/navigation";
 import Card from "@/components/Card";
 import Button from "@/components/Button";
 import BottomSheet from "@/components/BottomSheet";
-import PhotoBottomSheet from "@/components/PhotoBottomSheet"; // Import the new component
+import PhotoBottomSheet from "@/components/PhotoBottomSheet";
 import LoadingSpinner from "@/components/LoadingSpinner";
 
 const LocationDetailsContent: FC = () => {
@@ -85,9 +85,9 @@ const LocationDetailsContent: FC = () => {
     if (location.images && location.images.length > 0) {
       setCurrentPhotoIndex(index);
       setPhotoSheetOpen(true);
-      // Trigger vibration on image click
+
       if (navigator.vibrate) {
-        navigator.vibrate(100); // Vibration for 100ms
+        navigator.vibrate(450);
       }
     }
   };

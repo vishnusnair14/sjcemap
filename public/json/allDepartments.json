@@ -1,192 +1,192 @@
 [
     {
+        "id": "biotechnology",
         "spot_name": "Bio Technology",
         "description": "The Department of Biotechnology at SJCE provides a full education within the integrated fields of Biotechnology. Our courses span from introductory classes on bachelor level to advanced courses on master level and doctoral programs .An important part of the education is the Master Project which is part of the official research with one of our research groups.",
         "image": "https://firebasestorage.googleapis.com/v0/b/sjce-map.appspot.com/o/SJCE-MAP-IMAGES%2FBIO_TECH_IMG.png?alt=media&token=e95e3bbc-a966-4bf3-9a50-992678bc34ee",
         "latitude": 12.314829449352425,
         "longitude": 76.61298406561403,
         "google_360_view_url": "",
-        "id": "biotechnology",
         "images": [
             "https://firebasestorage.googleapis.com/v0/b/sjce-map.appspot.com/o/SJCE-MAP-IMAGES%2FBIO_TECH_IMG.png?alt=media&token=e95e3bbc-a966-4bf3-9a50-992678bc34ee"
         ]
     },
     {
+        "id": "chemistry_dept",
         "spot_name": "Chemistry",
         "description": "Department of Chemistry was established as a part of SJCE in 1963 and it has got a excellent qualified faculties offering Masters of Science and Doctoral Programmes (Ph.D) in the area of Chemistry. M.Sc Chemistry with four core modules of Analytical Chemistry, Organic Chemistry, Inorganic Chemistry and Physical Chemistry.",
         "image": "https://firebasestorage.googleapis.com/v0/b/sjce-map.appspot.com/o/SJCE-MAP-IMAGES%2FNO_IMAGE_FOUND_IMG.jpg?alt=media&token=ec64235b-374c-458a-aaf9-7dc67c110513",
         "latitude": 12.31405559030684,
         "longitude": 76.61368421345409,
         "google_360_view_url": "",
-        "id": "chemistry_dept",
         "images": []
     },
     {
+        "id": "civil_engineering",
         "spot_name": "Civil Engineering",
         "description": "The Department of Civil Engineering was established during 1963. It possesses state of the art facilities to cates to the needs of undergraduate students, post graduate students and research scholars. The department has distinguished faculty with specialisation in almost all major areas of civil engineering.",
         "image": "https://firebasestorage.googleapis.com/v0/b/sjce-map.appspot.com/o/SJCE-MAP-IMAGES%2FCIVIL_ENGG_IMG.jpg?alt=media&token=3975b767-b311-46c7-9796-70d1118898c0",
         "latitude": 12.314591647098691,
         "longitude": 76.6130538741138,
         "google_360_view_url": "",
-        "id": "civil_engineering",
         "images": [
             "https://firebasestorage.googleapis.com/v0/b/sjce-map.appspot.com/o/SJCE-MAP-IMAGES%2FCIVIL_ENGG_IMG.jpg?alt=media&token=3975b767-b311-46c7-9796-70d1118898c0"
         ]
     },
     {
+        "id": "computer_application",
         "spot_name": "Computer Application",
         "description": "Department has been established to design and offer courses MCA, MSc(Computer Science)and BCA with an objective of producing the best computer professionals to keep swiftness with the R&D activities in this fast emerging field of Computer Applications. Ever since its inception in 1986, the department strives to meet the computing needs of different sectors and offering specially designed courses to their students.",
         "image": "https://firebasestorage.googleapis.com/v0/b/sjce-map.appspot.com/o/SJCE-MAP-IMAGES%2FMCA_BLOCK_IMG.jpg?alt=media&token=c5f92f26-8fb2-4807-bee5-f2614bb6e8fe",
         "latitude": 12.317887039422311,
         "longitude": 76.61428518213096,
         "google_360_view_url": "https://www.google.com/maps/embed?pb=!4v1727631093980!6m8!1m7!1sCAoSLEFGMVFpcE1VOGpxdklGckFGbjNBQzdTVlViVmNPc084Sm9ZVGZqQkZtcjQ0!2m2!1d12.31332577408701!2d76.61338983592626!3f298.7424543964593!4f-3.7789169703981003!5f0.7820865974627469",
-        "id": "computer_application",
         "images": [
             "https://firebasestorage.googleapis.com/v0/b/sjce-map.appspot.com/o/SJCE-MAP-IMAGES%2FMCA_BLOCK_IMG.jpg?alt=media&token=c5f92f26-8fb2-4807-bee5-f2614bb6e8fe"
         ]
     },
     {
+        "id": "computer_science_and_engg",
         "spot_name": "Computer Science and Engineering",
         "description": "The inception of the Department of Computer Science and Engineering (CS&E) was one among the first to be established in the State of Karnataka in the year 1982. Our mission is to create ideas that deepen and advance our understanding of the realm of Computer Science and Engineering and with those ideas to develop innovative, principled, and insightful leaders who changed the world.",
         "image": "https://firebasestorage.googleapis.com/v0/b/sjce-map.appspot.com/o/SJCE-MAP-IMAGES%2FCSE_BLOCK_IMG.jpg?alt=media&token=5be082f6-a69c-4697-ab60-765d03378f87",
         "latitude": 12.316727416375985,
         "longitude": 76.61399049877764,
         "google_360_view_url": "",
-        "id": "computer_science_and_engg",
         "images": [
             "https://firebasestorage.googleapis.com/v0/b/sjce-map.appspot.com/o/SJCE-MAP-IMAGES%2FCSE_BLOCK_IMG.jpg?alt=media&token=5be082f6-a69c-4697-ab60-765d03378f87"
         ]
     },
     {
+        "id": "construction_technology_and_management",
         "spot_name": "Construction Technology and Management",
         "description": "The Department of Construction Technology and Management was established in the year 2004. It possesses state of the art facilities to cater to the needs of undergraduate students, post graduate students and research scholars.",
         "image": "https://firebasestorage.googleapis.com/v0/b/sjce-map.appspot.com/o/SJCE-MAP-IMAGES%2FCONSTRUCTION_TECH_IMG.png?alt=media&token=80bd2f0b-b9b5-4eb1-836f-39ab83e68d26",
         "latitude": 12.31501299858657,
         "longitude": 76.61277157252498,
         "google_360_view_url": "",
-        "id": "construction_technology_and_management",
         "images": [
             "https://firebasestorage.googleapis.com/v0/b/sjce-map.appspot.com/o/SJCE-MAP-IMAGES%2FCONSTRUCTION_TECH_IMG.png?alt=media&token=80bd2f0b-b9b5-4eb1-836f-39ab83e68d26"
         ]
     },
     {
+        "id": "electrical_and_electronics_engineering",
         "spot_name": "Electrical and Electronics Engineering",
         "description": "The Department of Electrical and Electronics Engineering was established in 1963. The department offers undergraduate, Post Graduate Programs. In addition to these, it also offers M.Sc. Engineering by research and Ph. D programs which provide a platform for bright graduates and postgraduates to conduct research in the state-of-the-art technologies.",
         "image": "https://firebasestorage.googleapis.com/v0/b/sjce-map.appspot.com/o/SJCE-MAP-IMAGES%2FNO_IMAGE_FOUND_IMG.jpg?alt=media&token=ec64235b-374c-458a-aaf9-7dc67c110513",
         "latitude": 12.313203333761765,
         "longitude": 76.61260699609214,
         "google_360_view_url": "",
-        "id": "electrical_and_electronics_engineering",
         "images": []
     },
     {
+        "id": "electronics_and_communications_engineering",
         "spot_name": "Electronics and Communications Engineering",
         "description": "The department of Electronics and Communication Engineering was established in 1968 .The department offers an undergraduate program in Electronics and Communication Engineering, three PG programs namely M.Tech in Industrial Electronics, M.Tech in Network and Internet Engineering and M.Tech in Automotive Electronics. In addition to these, it also offers Ph.D. programs.",
         "image": "https://firebasestorage.googleapis.com/v0/b/sjce-map.appspot.com/o/SJCE-MAP-IMAGES%2FNO_IMAGE_FOUND_IMG.jpg?alt=media&token=ec64235b-374c-458a-aaf9-7dc67c110513",
         "latitude": 12.313131358593695,
         "longitude": 76.61304738443161,
         "google_360_view_url": "",
-        "id": "electronics_and_communications_engineering",
         "images": []
     },
     {
+        "id": "electronics_and_instrumentation_engineering",
         "spot_name": "Electronics and Instrumentation Engineering",
         "description": "The Department of Instrumentation Technology was established in the year 1978 and renamed as Electronics and Instrumentation in the year 2014. Department offers UG programme, B.E. in Electronics and Instrumentation Engineering and PG programme, M.Tech. in Biomedical Signal Processing and Instrumentation.",
         "image": "https://firebasestorage.googleapis.com/v0/b/sjce-map.appspot.com/o/SJCE-MAP-IMAGES%2FNO_IMAGE_FOUND_IMG.jpg?alt=media&token=ec64235b-374c-458a-aaf9-7dc67c110513",
         "latitude": 0.0,
         "longitude": 0.0,
         "google_360_view_url": "",
-        "id": "electronics_and_instrumentation_engineering",
         "images": []
     },
     {
+        "id": "environmental_engineering",
         "spot_name": "Environmental Engineering",
         "description": "",
         "image": "https://firebasestorage.googleapis.com/v0/b/sjce-map.appspot.com/o/SJCE-MAP-IMAGES%2FENV_ENGG_IMG.png?alt=media&token=3d09eb47-4b14-4dde-ade4-bbbe727e1d38",
         "latitude": 12.314815925084,
         "longitude": 76.6132156483813,
         "google_360_view_url": "",
-        "id": "environmental_engineering",
         "images": [
             "https://firebasestorage.googleapis.com/v0/b/sjce-map.appspot.com/o/SJCE-MAP-IMAGES%2FENV_ENGG_IMG.png?alt=media&token=3d09eb47-4b14-4dde-ade4-bbbe727e1d38"
         ]
     },
     {
+        "id": "industrial_and_production_engineering",
         "spot_name": "Industrial and Production Engineering",
         "description": "Industrial and Production Engineering Department came into existence in the year 1980 under the umbrella of JSS Mahavidyapeetha. It became a grant-in-aid department in the year 1983. Ever since its inception, the department has grown from strength to strength over the years in terms of intake of students. The program was started in 1980. The department has an intake of over 60 students.",
         "image": "https://firebasestorage.googleapis.com/v0/b/sjce-map.appspot.com/o/SJCE-MAP-IMAGES%2FINDUSTRIAL_PROD_IMG.jpg?alt=media&token=9d11f2ac-c8f0-482f-8f39-19f5f0c685d0",
         "latitude": 12.315212605997358,
         "longitude": 76.61343357541614,
         "google_360_view_url": "",
-        "id": "industrial_and_production_engineering",
         "images": [
             "https://firebasestorage.googleapis.com/v0/b/sjce-map.appspot.com/o/SJCE-MAP-IMAGES%2FINDUSTRIAL_PROD_IMG.jpg?alt=media&token=9d11f2ac-c8f0-482f-8f39-19f5f0c685d0"
         ]
     },
     {
+        "id": "information_science_and_engineering",
         "spot_name": "Information Science and Engineering",
         "description": "The Department of Information Science & Engineering was established in the year 2000. The department offers two undergraduate program B.E in Information Science and Engineering started in the year 2000, B.E in Computer Science & Business Systems (CSBS) started in the year 2019 and two postgraduate programs M.Tech in Software Engineering started in the year 1995 and M.Tech in Data Science started in the year 2017.",
         "image": "https://firebasestorage.googleapis.com/v0/b/sjce-map.appspot.com/o/SJCE-MAP-IMAGES%2FISE_IMG.png?alt=media&token=e9ff2327-8d1c-4835-9eef-9c9f6416e213",
         "latitude": 12.316341621694233,
         "longitude": 76.61390303860941,
         "google_360_view_url": "https://www.google.com/maps/embed?pb=!4v1727678179031!6m8!1m7!1sCAoSLEFGMVFpcE41MDlxZHdKVmFHZjgyQ01NcnNkTVF4X05BVlhFMnZqNUtpMWhv!2m2!1d12.31331890832315!2d76.61354780551677!3f292.5142359791262!4f4.094120408749276!5f0.7820865974627469",
-        "id": "information_science_and_engineering",
         "images": [
             "https://firebasestorage.googleapis.com/v0/b/sjce-map.appspot.com/o/SJCE-MAP-IMAGES%2FISE_IMG.png?alt=media&token=e9ff2327-8d1c-4835-9eef-9c9f6416e213"
         ]
     },
     {
+        "id": "mba",
         "spot_name": "MBA",
         "description": "JSS CMS, Mysuru was established in the year 1998. From a very modest beginning of starting just one MBA (General) Program, we have now been able to carve a niche for ourselves in the realm of Management Education, leading to the establishment of 4 MBA programs namely, MBA (General Management), MBA (Financial Management), MBA (Retail Management) and MBA (Digital Marketing).",
         "image": "https://firebasestorage.googleapis.com/v0/b/sjce-map.appspot.com/o/SJCE-MAP-IMAGES%2FCMS_IMG.jpg?alt=media&token=177715c5-ac17-487a-b691-02482e819ef4",
         "latitude": 12.317810006495971,
         "longitude": 76.61398790262588,
         "google_360_view_url": "https://www.google.com/maps/embed?pb=!4v1727678473327!6m8!1m7!1sCAoSLEFGMVFpcE1TQ0NSbVRueGVscEh2NzdtMmhTRVhYRlBQdEh1NGtjRWMydFVR!2m2!1d12.31326194409462!2d76.61332275168276!3f129.25226303514728!4f-10.372588070564305!5f0.7820865974627469",
-        "id": "mba",
         "images": [
             "https://firebasestorage.googleapis.com/v0/b/sjce-map.appspot.com/o/SJCE-MAP-IMAGES%2FCMS_IMG.jpg?alt=media&token=177715c5-ac17-487a-b691-02482e819ef4"
         ]
     },
     {
+        "id": "mathematics_department",
         "spot_name": "Mathematics Department",
         "description": "The Department of Mathematics started along with the institute (1963). The department initially catered to the needs of the UG and PG Engineering Mathematics and subsequently, in 2019-20, introduced the PG programme, namely, the M.Sc. (Mathematics). Department of Mathematics caters to the needs of the Engineering Departments and Department of Computer applications of the institution but also offers its own master's program: M.Sc. (Mathematics).",
         "image": "https://firebasestorage.googleapis.com/v0/b/sjce-map.appspot.com/o/SJCE-MAP-IMAGES%2FNO_IMAGE_FOUND_IMG.jpg?alt=media&token=ec64235b-374c-458a-aaf9-7dc67c110513",
         "latitude": 0.0,
         "longitude": 0.0,
         "google_360_view_url": "",
-        "id": "mathematics_department",
         "images": []
     },
     {
+        "id": "mechanical_engineering",
         "spot_name": "Mechanical Engineering",
         "description": "The Department of Mechanical Engineering was established in the year 1963. The department offers one Under graduate and two post graduate programs. B.E. in Mechanical Engineering has an intake of 120 students, M.Tech in Maintenance Engineering and M.Tech in Engineering Management each have an intake of 18 students.",
         "image": "https://firebasestorage.googleapis.com/v0/b/sjce-map.appspot.com/o/SJCE-MAP-IMAGES%2FMECH_IMG.jpg?alt=media&token=43598ce1-8df0-4aee-966d-881682efd94d",
         "latitude": 12.313752024781055,
         "longitude": 76.61261611656029,
         "google_360_view_url": "https://www.google.com/maps/embed?pb=!4v1727631387203!6m8!1m7!1sCAoSLEFGMVFpcE9GcW03ZGJxOWw2ZmxGeXFHdlJzWWhZOVJNRHgyT2dUMEFSZExt!2m2!1d12.31363794775618!2d76.6135225057127!3f20.268025873289684!4f1.4179654657629044!5f0.7820865974627469",
-        "id": "mechanical_engineering",
         "images": [
             "https://firebasestorage.googleapis.com/v0/b/sjce-map.appspot.com/o/SJCE-MAP-IMAGES%2FMECH_IMG.jpg?alt=media&token=43598ce1-8df0-4aee-966d-881682efd94d"
         ]
     },
     {
+        "id": "physics_department",
         "spot_name": "Physics Department",
         "description": "The Department was established along with the Institution in the year 1963. The academic activities of the department are teaching, research and conducting workshops, seminars, guest lectures. The department of Physics has been recognized as a research center of Visvesvaraya Technological University (VTU) Belagavi & J.S.S. Science & Technology University (JSSS&T) Mysuru.",
         "image": "https://firebasestorage.googleapis.com/v0/b/sjce-map.appspot.com/o/SJCE-MAP-IMAGES%2FNO_IMAGE_FOUND_IMG.jpg?alt=media&token=ec64235b-374c-458a-aaf9-7dc67c110513",
         "latitude": 0.0,
         "longitude": 0.0,
         "google_360_view_url": "",
-        "id": "physics_department",
         "images": []
     },
     {
+        "id": "polymer_science_and_technology",
         "spot_name": "Polymer Science and Technology",
         "description": "The Department of Polymer Science and Technology (PST) was established during 1987-88. It is the only department in the state of Karnataka offering engineering degree in PST (UG, PG, PhD). Department practices outcome based education in the domain of Polymeric materials to impart the science required for engineering skills to develop useful technology.",
         "image": "https://firebasestorage.googleapis.com/v0/b/sjce-map.appspot.com/o/SJCE-MAP-IMAGES%2FNO_IMAGE_FOUND_IMG.jpg?alt=media&token=ec64235b-374c-458a-aaf9-7dc67c110513",
         "latitude": 0.0,
         "longitude": 0.0,
         "google_360_view_url": "",
-        "id": "polymer_science_and_technology",
         "images": []
     }
 ]

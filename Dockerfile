@@ -1,4 +1,4 @@
-# Dockerfile for vishnusnair/jssstumap:latest image
+# Dockerfile for vishnusnair/sjcemap:latest image
 
 # Base image
 FROM node:18-alpine AS base

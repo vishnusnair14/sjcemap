@@ -7,23 +7,21 @@
         "longitude": 76.61323590439528,
         "google_360_view_url": "https://www.google.com/maps/embed?pb=!4v1713380064809!6m8!1m7!1sCAoSLEFGMVFpcE5CaUxHekFwZS1tTDdPc3lxM3RGMDB4blZ4QVVVbjlkQzIwVG9f!2m2!1d12.313278354425!2d76.61341839882!3f250.62027000033387!4f-6.261559721521849!5f0.7820865974627469",
         "id": "sjce_library",
-        "google_image_url_1": "https://example.com/google_image_1.jpg",
-        "google_image_url_2": "https://example.com/google_image_2.jpg",
-        "google_image_url_3": "https://example.com/google_image_3.jpg",
-        "google_image_url_4": "https://example.com/google_image_4.jpg"
+        "images": [
+            "https://firebasestorage.googleapis.com/v0/b/sjce-map.appspot.com/o/SJCE-MAP-IMAGES%2FSJCE_LIBRARY_IMG.jpg?alt=media&token=4185bd88-5902-4add-aef4-28c7d6ac862e",
+            "https://firebasestorage.googleapis.com/v0/b/sjce-map.appspot.com/o/SJCE-MAP-IMAGES%2Fspot_google_images%2FShortcutSpotImages%2FSJCE_CENTRAL_LIBRARY%2FSJCE_CENTRAL_LIBRARY_SGI_1.png?alt=media&token=bbdc85d9-0a4f-46f9-909d-3e3b7fd51107",
+            "https://firebasestorage.googleapis.com/v0/b/sjce-map.appspot.com/o/SJCE-MAP-IMAGES%2Fspot_google_images%2FShortcutSpotImages%2FSJCE_CENTRAL_LIBRARY%2FSJCE_CENTRAL-_LIBRARY_SGI_2.png?alt=media&token=4bb885a6-51f8-4ab0-9726-893ef403380b"
+        ]
     },
     {
         "spot_name": "Referecence Section",
         "description": "Monday to Saturday 8:00 AM to 08:00 PM (Depending on the students' requirements, the above timings are extended during examination time.)",
-        "image": "",
+        "image": "https://firebasestorage.googleapis.com/v0/b/sjce-map.appspot.com/o/SJCE-MAP-IMAGES%2FNO_IMAGE_FOUND_IMG.jpg?alt=media&token=ec64235b-374c-458a-aaf9-7dc67c110513",
         "latitude": 76.61298406561403,
         "longitude": 76.61298406561403,
         "google_360_view_url": "https://www.google.com/maps/embed?pb=!4v1727630879463!6m8!1m7!1sCAoSLEFGMVFpcFBwZW1VWklTWDMwLTNWZVFPSkE2OTZJMmZCcWR0VkhkYllOXzBR!2m2!1d12.31335133671973!2d76.61349174043895!3f106.22602061700107!4f-1.858718449031059!5f0.7820865974627469",
         "id": "reference_section",
-        "google_image_url_1": "",
-        "google_image_url_2": "https://example.com/google_image_2.jpg",
-        "google_image_url_3": "https://example.com/google_image_3.jpg",
-        "google_image_url_4": "https://example.com/google_image_4.jpg"
+        "images": []
     },
     {
         "spot_name": "IS Seminar Hall",
@@ -33,23 +31,24 @@
         "longitude": 76.61416535894064,
         "google_360_view_url": "https://www.google.com/maps/embed?pb=!4v1713459151943!6m8!1m7!1sCAoSLEFGMVFpcE9FaHdaNHJ3dTQyMXplNFBNTDFWUGxyOGRSUG5sS2xld3Nmbjdl!2m2!1d12.313344953469!2d76.613503040131!3f284.7891621315904!4f5.383096228688231!5f0.7820865974627469",
         "id": "is_seminar_hall",
-        "google_image_url_1": "",
-        "google_image_url_2": "https://example.com/google_image_2.jpg",
-        "google_image_url_3": "https://example.com/google_image_3.jpg",
-        "google_image_url_4": "https://example.com/google_image_4.jpg"
+        "images": [
+            "https://firebasestorage.googleapis.com/v0/b/sjce-map.appspot.com/o/SJCE-MAP-IMAGES%2FIS_SEMINAR_HALL_IMG.jpg?alt=media&token=e18c7b8c-ced2-4ab2-9654-0e874da5e7a9",
+            "https://firebasestorage.googleapis.com/v0/b/sjce-map.appspot.com/o/SJCE-MAP-IMAGES%2Fspot_google_images%2FShortcutSpotImages%2FIS_SEMINAR_HALL%2FIS_SEMINAR_HALL_SGI_1.jpg?alt=media&token=b47d4244-c04d-4081-aa65-db55b9bd4f49",
+            "https://firebasestorage.googleapis.com/v0/b/sjce-map.appspot.com/o/SJCE-MAP-IMAGES%2Fspot_google_images%2FShortcutSpotImages%2FIS_SEMINAR_HALL%2FIS_SEMINAR_HALL_SGI_2.jpg?alt=media&token=41b4e16d-9363-45bd-a56e-a1693dc61b22",
+            "https://firebasestorage.googleapis.com/v0/b/sjce-map.appspot.com/o/SJCE-MAP-IMAGES%2Fspot_google_images%2FShortcutSpotImages%2FIS_SEMINAR_HALL%2FIS_SEMINAR_HALL_SGI_3.jpg?alt=media&token=a6f65d3c-5f9a-4210-ab1e-18bc056b8b66",
+            "https://firebasestorage.googleapis.com/v0/b/sjce-map.appspot.com/o/SJCE-MAP-IMAGES%2Fspot_google_images%2FShortcutSpotImages%2FIS_SEMINAR_HALL%2FIS_SEMINAR_HALL_SGI_4.jpg?alt=media&token=bf12aecd-d912-4fc8-8bed-135a17e20566"
+        ]
     },
     {
         "spot_name": "CMS Seminar Hall",
         "description": "A spacious and well-equipped venue designed for academic and professional gatherings. It can accommodate a significant number of attendees, making it ideal for lectures, workshops, and conferences. The hall features comfortable seating, advanced audio-visual equipment, and high-speed internet connectivity, ensuring an engaging and interactive experience for participants.",
-
         "image": "https://firebasestorage.googleapis.com/v0/b/sjce-map.appspot.com/o/SJCE-MAP-IMAGES%2FSJCE_CMS_SH.png?alt=media&token=f19f9502-b697-4ad1-8dca-8449f0ee4dcf",
         "latitude": 12.3132719,
         "longitude": 76.6134423,
         "google_360_view_url": "https://www.google.com/maps/embed?pb=!4v1727631496493!6m8!1m7!1sCAoSLEFGMVFpcE5IRzYzS3ZSVHlnQmRaaEU5aDBvZWVBUHBXbXpWUXR1Rl9NYTFp!2m2!1d12.31327188769745!2d76.61344228678853!3f194.85870194613923!4f-12.992055797316809!5f0.7820865974627469",
         "id": "cms_seminar_hall",
-        "google_image_url_1": "",
-        "google_image_url_2": "https://example.com/google_image_2.jpg",
-        "google_image_url_3": "https://example.com/google_image_3.jpg",
-        "google_image_url_4": "https://example.com/google_image_4.jpg"
+        "images": [
+            "https://firebasestorage.googleapis.com/v0/b/sjce-map.appspot.com/o/SJCE-MAP-IMAGES%2FSJCE_CMS_SH.png?alt=media&token=f19f9502-b697-4ad1-8dca-8449f0ee4dcf"
+        ]
     }
 ]

@@ -7,10 +7,13 @@
         "longitude": 76.61383296727564,
         "google_360_view_url": "https://www.google.com/maps/embed?pb=!4v1713459549432!6m8!1m7!1sCAoSLEFGMVFpcE02MjYzaG85MnZ0NnhSbjRqSVhkX0VLTHdBSVktMWM2TXFLWmxi!2m2!1d12.313441633525!2d76.613355715936!3f260!4f10!5f0.7820865974627469",
         "id": "main_parking",
-        "google_image_url_1": "",
-        "google_image_url_2": "https://example.com/google_image_2.jpg",
-        "google_image_url_3": "https://example.com/google_image_3.jpg",
-        "google_image_url_4": "https://example.com/google_image_4.jpg"
+        "images": [
+            "https://firebasestorage.googleapis.com/v0/b/sjce-map.appspot.com/o/SJCE-MAP-IMAGES%2FSJCE_MAIN_PARKING_IMG.png?alt=media&token=adfbd720-840a-49c4-bd8f-a538ea84de5d",
+            "https://firebasestorage.googleapis.com/v0/b/sjce-map.appspot.com/o/SJCE-MAP-IMAGES%2Fspot_google_images%2FShortcutSpotImages%2FSJCE_MAIN_PARKING_LOT%2FSJCE_MAIN_PARKING_SGI_1.jpg?alt=media&token=70b7abe7-afa2-4963-b93b-4c9e739751c1",
+            "https://firebasestorage.googleapis.com/v0/b/sjce-map.appspot.com/o/SJCE-MAP-IMAGES%2Fspot_google_images%2FShortcutSpotImages%2FSJCE_MAIN_PARKING_LOT%2FSJCE_MAIN_PARKING_SGI_2.png?alt=media&token=bb03fdaa-f403-4192-97cb-62f0fac9e262",
+            "https://firebasestorage.googleapis.com/v0/b/sjce-map.appspot.com/o/SJCE-MAP-IMAGES%2Fspot_google_images%2FShortcutSpotImages%2FSJCE_MAIN_PARKING_LOT%2FSJCE_MAIN_PARKING_SGI_3.png?alt=media&token=1e34bfda-f864-4c51-812e-27b028bc4189",
+            "https://firebasestorage.googleapis.com/v0/b/sjce-map.appspot.com/o/SJCE-MAP-IMAGES%2Fspot_google_images%2FShortcutSpotImages%2FSJCE_MAIN_PARKING_LOT%2FSJCE_MAIN_PARKING_SGI_4.png?alt=media&token=bc936e80-5e9f-4351-a892-6af2a03a3789"
+        ]
     },
     {
         "spot_name": "Staff Parking 1",
@@ -20,10 +23,7 @@
         "longitude": 0.0,
         "google_360_view_url": "",
         "id": "staff_parking_1",
-        "google_image_url_1": "",
-        "google_image_url_2": "https://example.com/google_image_2.jpg",
-        "google_image_url_3": "https://example.com/google_image_3.jpg",
-        "google_image_url_4": "https://example.com/google_image_4.jpg"
+        "images": []
     },
     {
         "spot_name": "Staff Parking 2",
@@ -33,10 +33,7 @@
         "longitude": 0.0,
         "google_360_view_url": "",
         "id": "staff_parking_2",
-        "google_image_url_1": "",
-        "google_image_url_2": "https://example.com/google_image_2.jpg",
-        "google_image_url_3": "https://example.com/google_image_3.jpg",
-        "google_image_url_4": "https://example.com/google_image_4.jpg"
+        "images": []
     },
     {
         "spot_name": "Parking Lot 1",
@@ -46,10 +43,7 @@
         "longitude": 0.0,
         "google_360_view_url": "",
         "id": "parking_lot_1",
-        "google_image_url_1": "",
-        "google_image_url_2": "https://example.com/google_image_2.jpg",
-        "google_image_url_3": "https://example.com/google_image_3.jpg",
-        "google_image_url_4": "https://example.com/google_image_4.jpg"
+        "images": []
     },
     {
         "spot_name": "Parking Lot 2",
@@ -59,9 +53,6 @@
         "longitude": 0.0,
         "google_360_view_url": "",
         "id": "parking_lot_2",
-        "google_image_url_1": "",
-        "google_image_url_2": "https://example.com/google_image_2.jpg",
-        "google_image_url_3": "https://example.com/google_image_3.jpg",
-        "google_image_url_4": "https://example.com/google_image_4.jpg"
+        "images": []
     }
 ]

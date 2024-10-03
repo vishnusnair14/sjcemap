@@ -12,7 +12,7 @@ type Department = {
   image: string;
 };
 
-const AllLocations = () => {
+const AllDepartments = () => {
   const [departments, setDepartments] = useState<Department[]>([]);
   const [loading, setLoading] = useState<boolean>(true);
   const [searchTerm, setSearchTerm] = useState<string>("");
@@ -33,6 +33,26 @@ const AllLocations = () => {
         setLoading(false);
         setIsDisabled(false);
       });
+  }, []);
+
+  // Scroll restoration
+  useEffect(() => {
+    // Restore scroll position
+    const savedScrollPosition = sessionStorage.getItem("scrollPosition");
+    if (savedScrollPosition) {
+      window.scrollTo(0, parseInt(savedScrollPosition));
+    }
+
+    const handleScroll = () => {
+      // Save scroll position on scroll
+      sessionStorage.setItem("scrollPosition", window.scrollY.toString());
+    };
+
+    window.addEventListener("scroll", handleScroll);
+
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
   }, []);
 
   // Filter departments based on search term
@@ -141,4 +161,4 @@ const AllLocations = () => {
   );
 };
 
-export default AllLocations;
+export default AllDepartments;

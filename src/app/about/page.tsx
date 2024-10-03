@@ -2,7 +2,7 @@
 
 import React from "react";
 
-const AboutPage: React.FC = () => {
+const aboutPage: React.FC = () => {
   return (
     <div className="container mx-auto px-4 py-8 bg-white text-gray-900">
       <h1 className="text-4xl font-bold text-center mb-8 text-black">
@@ -111,4 +111,4 @@ const AboutPage: React.FC = () => {
   );
 };
 
-export default AboutPage;
+export default aboutPage;

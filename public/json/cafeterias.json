@@ -7,23 +7,21 @@
         "longitude": 76.61509225450047,
         "google_360_view_url": "https://www.google.com/maps/embed?pb=!4v1713507343869!6m8!1m7!1sCAoSLEFGMVFpcE5Ibjl4SW5VUUhodzYySDY5SzlLLTQyb3llbUo1UDBtTXRUd0tl!2m2!1d12.313275121915!2d76.613242259884!3f206.15779378445282!4f-7.154512019977773!5f0.780865974627469",
         "id": "yampa",
-        "google_image_url_1": "https://example.com/google_image_1.jpg",
-        "google_image_url_2": "https://example.com/google_image_2.jpg",
-        "google_image_url_3": "https://example.com/google_image_3.jpg",
-        "google_image_url_4": "https://example.com/google_image_4.jpg"
+        "images": [
+            "https://firebasestorage.googleapis.com/v0/b/sjce-map.appspot.com/o/SJCE-MAP-IMAGES%2FSJCE_YAMPA.png?alt=media&token=03a6b06a-b749-47d5-b95b-5960253a2cc7",
+            "https://firebasestorage.googleapis.com/v0/b/sjce-map.appspot.com/o/SJCE-MAP-IMAGES%2Fspot_google_images%2FShortcutSpotImages%2FSJCE_YAMPA_CAFETERIA%2FSJCE_YAMPA_CAFETERIA_SGI_1.png?alt=media&token=7e0318a1-2bc5-4a3e-b51a-19ce790e817a",
+            "https://firebasestorage.googleapis.com/v0/b/sjce-map.appspot.com/o/SJCE-MAP-IMAGES%2Fspot_google_images%2FShortcutSpotImages%2FSJCE_YAMPA_CAFETERIA%2FSJCE_YAMPA_CAFETERIA_SGI_2.png?alt=media&token=930f7237-b150-47b3-b9e4-83022da0e42b"
+        ]
     },
     {
         "spot_name": "Annapoorna",
         "description": "Campus canteen is located in the college shopping centre which serves breakfast and lunch. Breakfast menu includes Idly, vada, variety of dosa, Tea, coffee etc,. Lunch menu includes south Indian and north Indian meals. (Menu may varies)",
-        "image": "https://firebasestorage.googleapis.com/v0/b/sjce-map.appspot.com/o/SJCE-MAP-IMAGES%2FSJCE_MYLARI_CANTEEN_IMG.png?alt=media&token=9a8e9653-b7b9-44e6-ad8e-b619cc200c49",
+        "image": "https://firebasestorage.googleapis.com/v0/b/sjce-map.appspot.com/o/SJCE-MAP-IMAGES%2FNO_IMAGE_FOUND_IMG.jpg?alt=media&token=ec64235b-374c-458a-aaf9-7dc67c110513",
         "latitude": 12.316577383526528,
         "longitude": 76.61285151140905,
         "google_360_view_url": "",
         "id": "annapoorna",
-        "google_image_url_1": "https://example.com/google_image_1.jpg",
-        "google_image_url_2": "https://example.com/google_image_2.jpg",
-        "google_image_url_3": "https://example.com/google_image_3.jpg",
-        "google_image_url_4": "https://example.com/google_image_4.jpg"
+        "images": []
     },
     {
         "spot_name": "PDA Canteen",
@@ -33,11 +31,7 @@
         "longitude": 76.61307068445255,
         "google_360_view_url": "",
         "id": "pda_canteen",
-        "photos": [
-            "https://firebasestorage.googleapis.com/v0/b/sjce-map.appspot.com/o/SJCE-MAP-IMAGES%2Fspot_google_images%2FShortcutSpotImages%2FSJCE_LARAS_CAFE%2FLARAS_CAFE_SGI_1.png?alt=media&token=c0748642-9701-4087-937f-3b7a2359f279",
-            "https://firebasestorage.googleapis.com/v0/b/sjce-map.appspot.com/o/SJCE-MAP-IMAGES%2Fspot_google_images%2FShortcutSpotImages%2FSJCE_LARAS_CAFE%2FLARAS_CAFE_SGI_2.png?alt=media&token=6ab56b54-2e3d-4a8c-b38a-815e7c8ff683",
-            "https://firebasestorage.googleapis.com/v0/b/sjce-map.appspot.com/o/SJCE-MAP-IMAGES%2Fspot_google_images%2FShortcutSpotImages%2FSJCE_LARAS_CAFE%2FLARAS_CAFE_SGI_3.png?alt=media&token=dff90d9e-aaf5-44f2-94f0-0bf1411f2905"
-        ]
+        "images": []
     },
     {
         "spot_name": "Laras Cafe",
@@ -47,10 +41,11 @@
         "longitude": 76.61502257118134,
         "google_360_view_url": "https://www.google.com/maps/embed?pb=!4v1713507654414!6m8!1m7!1sCAoSLEFGMVFpcE91VUxYVWUza1JFUmFKRVJjaGZCUlIwaDlWdHB0ekNjNWtkamNv!2m2!1d12.313265408621!2d76.613295902093!3f354.97710877353325!4f-6.395806351965689!5f0.7820865974627469",
         "id": "laras_cafe",
-        "google_image_url_1": "https://example.com/google_image_1.jpg",
-        "google_image_url_2": "https://example.com/google_image_2.jpg",
-        "google_image_url_3": "https://example.com/google_image_3.jpg",
-        "google_image_url_4": "https://example.com/google_image_4.jpg"
+        "images": [
+            "https://firebasestorage.googleapis.com/v0/b/sjce-map.appspot.com/o/SJCE-MAP-IMAGES%2Fspot_google_images%2FShortcutSpotImages%2FSJCE_LARAS_CAFE%2FLARAS_CAFE_SGI_3.png?alt=media&token=dff90d9e-aaf5-44f2-94f0-0bf1411f2905",
+            "https://firebasestorage.googleapis.com/v0/b/sjce-map.appspot.com/o/SJCE-MAP-IMAGES%2Fspot_google_images%2FShortcutSpotImages%2FSJCE_LARAS_CAFE%2FLARAS_CAFE_SGI_1.png?alt=media&token=c0748642-9701-4087-937f-3b7a2359f279",
+            "https://firebasestorage.googleapis.com/v0/b/sjce-map.appspot.com/o/SJCE-MAP-IMAGES%2Fspot_google_images%2FShortcutSpotImages%2FSJCE_LARAS_CAFE%2FLARAS_CAFE_SGI_2.png?alt=media&token=6ab56b54-2e3d-4a8c-b38a-815e7c8ff683"
+        ]
     },
     {
         "spot_name": "Alok's Kitchen",
@@ -60,9 +55,10 @@
         "longitude": 76.6122460322107,
         "google_360_view_url": "",
         "id": "aloks_kitchen",
-        "google_image_url_1": "https://example.com/google_image_1.jpg",
-        "google_image_url_2": "https://example.com/google_image_2.jpg",
-        "google_image_url_3": "https://example.com/google_image_3.jpg",
-        "google_image_url_4": "https://example.com/google_image_4.jpg"
+        "images": [
+            "https://firebasestorage.googleapis.com/v0/b/sjce-map.appspot.com/o/SJCE-MAP-IMAGES%2FALOKS_KITCHEN_IMG.jpeg?alt=media&token=4577843b-4828-4229-9348-d181fadbcd84",
+            "https://firebasestorage.googleapis.com/v0/b/sjce-map.appspot.com/o/SJCE-MAP-IMAGES%2Fspot_google_images%2FShortcutSpotImages%2FSJCE_ALOK_KITCHEN%2Faloks_kitchen_1.jpeg?alt=media&token=81875030-10f5-4a41-8912-f96fe2daedd8",
+            "https://firebasestorage.googleapis.com/v0/b/sjce-map.appspot.com/o/SJCE-MAP-IMAGES%2Fspot_google_images%2FShortcutSpotImages%2FSJCE_ALOK_KITCHEN%2Faloks_kitchen_2.jpeg?alt=media&token=94018ebe-9368-4fd1-b908-13141d609252"
+        ]
     }
 ]

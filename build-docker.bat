@@ -1,1 +1,1 @@
-docker build -t jssstumap-docker:latest . && docker tag jssstumap-docker vishnusnair/jssstumap-docker:latest && docker push vishnusnair/jssstumap-docker:latest
+docker build -t sjcemap-docker:latest . && docker tag sjcemap-docker vishnusnair/sjcemap-docker:latest && docker push vishnusnair/sjcemap-docker:latest
