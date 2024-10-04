@@ -38,10 +38,29 @@ const GeoFenceCheck = () => {
   const [locationError, setLocationError] = useState("");
   const [withinBoundary, setWithinBoundary] = useState(false);
   const [permissionDenied, setPermissionDenied] = useState(false);
+  const [watchId, setWatchId] = useState<number | null>(null);
 
   const playAlertSound = () => {
     const audio = new Audio("/sound/auth-success.mp3");
     audio.play();
+  };
+
+  const verifyLocation = (position: GeolocationPosition) => {
+    const userLocation: Location = {
+      lat: position.coords.latitude,
+      lng: position.coords.longitude,
+    };
+
+    if (isPointInPolygon(userLocation, GEOFENCE_BOUNDARY)) {
+      setWithinBoundary(true);
+      sessionStorage.setItem("authenticated", "true");
+      router.push("/home");
+      playAlertSound();
+    } else {
+      setWithinBoundary(false);
+      setLocationError("You are not inside SJCE Mysore Campus!");
+    }
+    setLoading(false);
   };
 
   useEffect(() => {
@@ -50,38 +69,24 @@ const GeoFenceCheck = () => {
       setLocationError("");
 
       if (navigator.geolocation) {
+        // Use getCurrentPosition to set the initial location
         navigator.geolocation.getCurrentPosition(
           (position) => {
-            const userLocation: Location = {
-              lat: position.coords.latitude,
-              lng: position.coords.longitude,
-            };
-
-            if (isPointInPolygon(userLocation, GEOFENCE_BOUNDARY)) {
-              setWithinBoundary(true);
-              setTimeout(() => {
-                sessionStorage.setItem("authenticated", "true");
-                router.push("/home");
-                playAlertSound();
-              }, 500);
-            } else {
-              setWithinBoundary(false);
-              setLocationError("You are not inside SJCE Mysore Campus!");
-            }
-            setLoading(false);
+            verifyLocation(position);
+            // Start watching the position
+            const id = navigator.geolocation.watchPosition(verifyLocation, (error) => {
+              setLoading(false);
+              handleGeolocationError(error);
+            }, {
+              enableHighAccuracy: true,
+              timeout: 10000,
+              maximumAge: 0,
+            });
+            setWatchId(id); // Store the watch ID for cleanup
           },
           (error) => {
             setLoading(false);
-            if (error.code === error.PERMISSION_DENIED) {
-              setLocationError("Permission to access location was denied.");
-              setPermissionDenied(true);
-            } else if (error.code === error.POSITION_UNAVAILABLE) {
-              setLocationError("Location information is unavailable.");
-            } else if (error.code === error.TIMEOUT) {
-              setLocationError("The request to get user location timed out.");
-            } else {
-              setLocationError("An unknown error occurred.");
-            }
+            handleGeolocationError(error);
           },
           {
             enableHighAccuracy: true,
@@ -95,8 +100,28 @@ const GeoFenceCheck = () => {
       }
     };
 
+    const handleGeolocationError = (error: GeolocationPositionError) => {
+      if (error.code === error.PERMISSION_DENIED) {
+        setLocationError("Permission to access location was denied.");
+        setPermissionDenied(true);
+      } else if (error.code === error.POSITION_UNAVAILABLE) {
+        setLocationError("Location information is unavailable.");
+      } else if (error.code === error.TIMEOUT) {
+        setLocationError("The request to get user location timed out.");
+      } else {
+        setLocationError("An unknown error occurred.");
+      }
+    };
+
     checkGeolocation();
-  }, [router]);
+
+    // Cleanup function to stop watching position
+    return () => {
+      if (watchId) {
+        navigator.geolocation.clearWatch(watchId);
+      }
+    };
+  }, [router, watchId]);
 
   useEffect(() => {
     if (withinBoundary && !loading) {
@@ -106,13 +131,17 @@ const GeoFenceCheck = () => {
 
   // Open browser settings
   const openBrowserSettings = () => {
-    window.open("chrome://settings/content/location", "_blank");
+    window.open("chrome://settings/content/location", "_self");
   };
 
   // Open Android location settings
   const openAndroidLocationSettings = () => {
-    if (navigator.userAgent.match(/Android/i)) {
-      window.location.href = "intent://#Intent;action=android.settings.LOCATION_SOURCE_SETTINGS;end";
+    const androidPattern = /Android/i;
+    const match = androidPattern.exec(navigator.userAgent);
+
+    if (match) {
+      window.location.href =
+        "intent://#Intent;action=android.settings.LOCATION_SOURCE_SETTINGS;end";
     } else {
       alert("This feature is only available on Android devices.");
     }
@@ -200,7 +229,7 @@ const GeoFenceCheck = () => {
         )}
 
         {withinBoundary && !loading && (
-          <p className="text-green-600+ text-center text-jssblue">
+          <p className="text-green-600 text-center text-jssblue">
             Authentication success, please wait...
           </p>
         )}
