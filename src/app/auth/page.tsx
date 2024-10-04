@@ -62,7 +62,7 @@ const GeoFenceCheck = () => {
       setWithinBoundary(false);
       setLocationError("You are not inside SJCE Mysore Campus!");
     }
-    setLoading(false); // Ensure loading is set to false after processing
+    setLoading(false);
   };
 
   const checkGeolocation = () => {
@@ -75,7 +75,7 @@ const GeoFenceCheck = () => {
           verifyLocation(position);
         },
         (error) => {
-          setLoading(false); // Set loading to false in all error cases
+          setLoading(false);
           if (error.code === error.PERMISSION_DENIED) {
             setLocationError("Permission to access location was denied.");
             setPermissionDenied(true);
@@ -103,10 +103,10 @@ const GeoFenceCheck = () => {
 
   useEffect(() => {
     checkGeolocation();
-    
+
     return () => {
       if (watchId !== null) {
-        navigator.geolocation.clearWatch(watchId); // Clear the watch on component unmount
+        navigator.geolocation.clearWatch(watchId);
       }
     };
   }, [router]);
@@ -116,6 +116,35 @@ const GeoFenceCheck = () => {
       playAlertSound();
     }
   }, [withinBoundary, loading]);
+
+  // Check permission status and handle changes
+  useEffect(() => {
+    const checkPermission = async () => {
+      const permissionStatus = await navigator.permissions.query({ name: 'geolocation' });
+      if (permissionStatus.state === 'granted') {
+        checkGeolocation(); // Re-check geolocation if permission is granted
+      } else if (permissionStatus.state === 'denied') {
+        setPermissionDenied(true);
+      }
+    };
+
+    checkPermission();
+
+    // Set up an event listener for permission changes (if supported)
+    if (navigator.permissions && navigator.permissions.addEventListener) {
+      const handler = (event: any) => {
+        if (event.target.state === 'granted') {
+          window.location.reload(); // Reload the page on permission granted
+        }
+      };
+      navigator.permissions.addEventListener('change', handler);
+
+      // Cleanup listener on component unmount
+      return () => {
+        navigator.permissions.removeEventListener('change', handler);
+      };
+    }
+  }, []);
 
   return (
     <div className="min-h-screen flex items-center justify-center">
@@ -130,7 +159,7 @@ const GeoFenceCheck = () => {
         {loading && (
           <div className="flex flex-col items-center justify-center">
             <svg
-              className="h-12 w-12 text-blue-600 animate-spin" // Added animate-spin for visual feedback
+              className="h-12 w-12 text-blue-600 animate-spin"
               xmlns="http://www.w3.org/2000/svg"
               fill="none"
               viewBox="0 0 24 24"
@@ -161,7 +190,6 @@ const GeoFenceCheck = () => {
             <p className="text-jssorange font-bold text-lg text-center">
               {locationError}
             </p>
-            {/* Show a specific message if permission is denied */}
             {permissionDenied ? (
               <p className="text-gray-500 text-center mt-2">
                 Please enable location permissions in your browser settings.
@@ -171,7 +199,6 @@ const GeoFenceCheck = () => {
                 <p className="text-gray-500 text-center mt-2">
                   You need to be inside the SJCE campus to access the website.
                 </p>
-                {/* Show "Redirect anyways" only if the user is not inside the campus and there is no permission issue */}
                 <a
                   href="/home"
                   className="mt-6 px-6 py-3 bg-jssblue text-white rounded-full transition duration-300"
@@ -184,7 +211,7 @@ const GeoFenceCheck = () => {
         )}
 
         {withinBoundary && !loading && (
-          <p className="text-green-600+ text-center text-jssblue">
+          <p className="text-center text-jssblue">
             Authentication success, please wait...
           </p>
         )}
