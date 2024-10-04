@@ -197,7 +197,7 @@ const GeoFenceCheck = () => {
             ) : (
               <>
                 <p className="text-gray-500 text-center mt-2">
-                  You need to be inside the SJCE campus to access the website.
+                  You need to be inside the SJCE campus to access the website. Some features might not work properly.
                 </p>
                 <a
                   href="/home"
