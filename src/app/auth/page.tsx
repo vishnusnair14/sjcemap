@@ -68,10 +68,10 @@ const GeoFenceCheck = () => {
               setWithinBoundary(false);
               setLocationError("You are not inside SJCE Mysore Campus!");
             }
-            setLoading(false); // Ensure loading is set to false after processing
+            setLoading(false);
           },
           (error) => {
-            setLoading(false); // Set loading to false in all error cases
+            setLoading(false);
             if (error.code === error.PERMISSION_DENIED) {
               setLocationError("Permission to access location was denied.");
               setPermissionDenied(true);
@@ -104,6 +104,20 @@ const GeoFenceCheck = () => {
     }
   }, [withinBoundary, loading]);
 
+  // Open browser settings
+  const openBrowserSettings = () => {
+    window.open("chrome://settings/content/location", "_blank");
+  };
+
+  // Open Android location settings
+  const openAndroidLocationSettings = () => {
+    if (navigator.userAgent.match(/Android/i)) {
+      window.location.href = "intent://#Intent;action=android.settings.LOCATION_SOURCE_SETTINGS;end";
+    } else {
+      alert("This feature is only available on Android devices.");
+    }
+  };
+
   return (
     <div className="min-h-screen flex items-center justify-center">
       <div className="bg-white p-8 rounded-2xl shadow-lg w-full max-w-lg m-2">
@@ -117,7 +131,7 @@ const GeoFenceCheck = () => {
         {loading && (
           <div className="flex flex-col items-center justify-center">
             <svg
-              className="h-12 w-12 text-blue-600 animate-spin" // Added animate-spin for visual feedback
+              className="h-12 w-12 text-blue-600 animate-spin"
               xmlns="http://www.w3.org/2000/svg"
               fill="none"
               viewBox="0 0 24 24"
@@ -148,22 +162,40 @@ const GeoFenceCheck = () => {
             <p className="text-jssorange font-bold text-lg text-center">
               {locationError}
             </p>
-            {/* Show a specific message if permission is denied */}
             {permissionDenied ? (
-              <p className="text-gray-500 text-center mt-2">
-                Please enable location permissions in your browser settings.
-              </p>
+              <>
+                <p className="text-gray-500 text-center mt-2">
+                  Please enable location permissions in your browser or device
+                  settings.
+                </p>
+                <div className="mt-4 flex justify-center">
+                  <button
+                    onClick={openBrowserSettings}
+                    className="px-4 py-2 bg-blue-500 text-white rounded-lg mr-2"
+                  >
+                    Open Browser Settings
+                  </button>
+                  <button
+                    onClick={openAndroidLocationSettings}
+                    className="px-4 py-2 bg-green-500 text-white rounded-lg"
+                  >
+                    Open Android Location Settings
+                  </button>
+                </div>
+              </>
             ) : (
-              <p className="text-gray-500 text-center mt-2">
-                You need to be inside the SJCE campus to access the website.
-              </p>
+              <>
+                <p className="text-gray-500 text-center mt-2">
+                  You need to be inside the SJCE campus to access the website.
+                </p>
+                <a
+                  href="/home"
+                  className="mt-6 px-6 py-3 bg-jssblue text-white rounded-full transition duration-300"
+                >
+                  Redirect anyways
+                </a>
+              </>
             )}
-            <a
-              href="/home"
-              className="mt-6 px-6 py-3 bg-jssblue text-white rounded-full transition duration-300"
-            >
-              Redirect anyways
-            </a>
           </div>
         )}
 
