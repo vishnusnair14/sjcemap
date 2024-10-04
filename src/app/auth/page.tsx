@@ -38,64 +38,77 @@ const GeoFenceCheck = () => {
   const [locationError, setLocationError] = useState("");
   const [withinBoundary, setWithinBoundary] = useState(false);
   const [permissionDenied, setPermissionDenied] = useState(false);
+  const [watchId, setWatchId] = useState<number | null>(null);
 
   const playAlertSound = () => {
     const audio = new Audio("/sound/auth-success.mp3");
     audio.play();
   };
 
-  useEffect(() => {
-    const checkGeolocation = () => {
-      setLoading(true);
-      setLocationError("");
-
-      if (navigator.geolocation) {
-        navigator.geolocation.getCurrentPosition(
-          (position) => {
-            const userLocation: Location = {
-              lat: position.coords.latitude,
-              lng: position.coords.longitude,
-            };
-
-            if (isPointInPolygon(userLocation, GEOFENCE_BOUNDARY)) {
-              setWithinBoundary(true);
-              setTimeout(() => {
-                sessionStorage.setItem("authenticated", "true");
-                router.push("/home");
-                playAlertSound();
-              }, 500);
-            } else {
-              setWithinBoundary(false);
-              setLocationError("You are not inside SJCE Mysore Campus!");
-            }
-            setLoading(false); // Ensure loading is set to false after processing
-          },
-          (error) => {
-            setLoading(false); // Set loading to false in all error cases
-            if (error.code === error.PERMISSION_DENIED) {
-              setLocationError("Permission to access location was denied.");
-              setPermissionDenied(true);
-            } else if (error.code === error.POSITION_UNAVAILABLE) {
-              setLocationError("Location information is unavailable.");
-            } else if (error.code === error.TIMEOUT) {
-              setLocationError("The request to get user location timed out.");
-            } else {
-              setLocationError("An unknown error occurred.");
-            }
-          },
-          {
-            enableHighAccuracy: true,
-            timeout: 10000,
-            maximumAge: 0,
-          }
-        );
-      } else {
-        setLoading(false);
-        setLocationError("Geolocation is not supported by this browser.");
-      }
+  const verifyLocation = (position: GeolocationPosition) => {
+    const userLocation: Location = {
+      lat: position.coords.latitude,
+      lng: position.coords.longitude,
     };
 
+    if (isPointInPolygon(userLocation, GEOFENCE_BOUNDARY)) {
+      setWithinBoundary(true);
+      setTimeout(() => {
+        sessionStorage.setItem("authenticated", "true");
+        router.push("/home");
+        playAlertSound();
+      }, 500);
+    } else {
+      setWithinBoundary(false);
+      setLocationError("You are not inside SJCE Mysore Campus!");
+    }
+    setLoading(false); // Ensure loading is set to false after processing
+  };
+
+  const checkGeolocation = () => {
+    setLoading(true);
+    setLocationError("");
+
+    if (navigator.geolocation) {
+      const id = navigator.geolocation.watchPosition(
+        (position) => {
+          verifyLocation(position);
+        },
+        (error) => {
+          setLoading(false); // Set loading to false in all error cases
+          if (error.code === error.PERMISSION_DENIED) {
+            setLocationError("Permission to access location was denied.");
+            setPermissionDenied(true);
+          } else if (error.code === error.POSITION_UNAVAILABLE) {
+            setLocationError("Location information is unavailable.");
+          } else if (error.code === error.TIMEOUT) {
+            setLocationError("The request to get user location timed out.");
+          } else {
+            setLocationError("An unknown error occurred.");
+          }
+        },
+        {
+          enableHighAccuracy: true,
+          timeout: 10000,
+          maximumAge: 0,
+        }
+      );
+
+      setWatchId(id);
+    } else {
+      setLoading(false);
+      setLocationError("Geolocation is not supported by this browser.");
+    }
+  };
+
+  useEffect(() => {
     checkGeolocation();
+    
+    return () => {
+      if (watchId !== null) {
+        navigator.geolocation.clearWatch(watchId); // Clear the watch on component unmount
+      }
+    };
   }, [router]);
 
   useEffect(() => {
