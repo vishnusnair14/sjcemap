@@ -38,29 +38,10 @@ const GeoFenceCheck = () => {
   const [locationError, setLocationError] = useState("");
   const [withinBoundary, setWithinBoundary] = useState(false);
   const [permissionDenied, setPermissionDenied] = useState(false);
-  const [watchId, setWatchId] = useState<number | null>(null);
 
   const playAlertSound = () => {
     const audio = new Audio("/sound/auth-success.mp3");
     audio.play();
-  };
-
-  const verifyLocation = (position: GeolocationPosition) => {
-    const userLocation: Location = {
-      lat: position.coords.latitude,
-      lng: position.coords.longitude,
-    };
-
-    if (isPointInPolygon(userLocation, GEOFENCE_BOUNDARY)) {
-      setWithinBoundary(true);
-      sessionStorage.setItem("authenticated", "true");
-      router.push("/home");
-      playAlertSound();
-    } else {
-      setWithinBoundary(false);
-      setLocationError("You are not inside SJCE Mysore Campus!");
-    }
-    setLoading(false);
   };
 
   useEffect(() => {
@@ -69,24 +50,38 @@ const GeoFenceCheck = () => {
       setLocationError("");
 
       if (navigator.geolocation) {
-        // Use getCurrentPosition to set the initial location
         navigator.geolocation.getCurrentPosition(
           (position) => {
-            verifyLocation(position);
-            // Start watching the position
-            const id = navigator.geolocation.watchPosition(verifyLocation, (error) => {
-              setLoading(false);
-              handleGeolocationError(error);
-            }, {
-              enableHighAccuracy: true,
-              timeout: 10000,
-              maximumAge: 0,
-            });
-            setWatchId(id); // Store the watch ID for cleanup
+            const userLocation: Location = {
+              lat: position.coords.latitude,
+              lng: position.coords.longitude,
+            };
+
+            if (isPointInPolygon(userLocation, GEOFENCE_BOUNDARY)) {
+              setWithinBoundary(true);
+              setTimeout(() => {
+                sessionStorage.setItem("authenticated", "true");
+                router.push("/home");
+                playAlertSound();
+              }, 500);
+            } else {
+              setWithinBoundary(false);
+              setLocationError("You are not inside SJCE Mysore Campus!");
+            }
+            setLoading(false); // Ensure loading is set to false after processing
           },
           (error) => {
-            setLoading(false);
-            handleGeolocationError(error);
+            setLoading(false); // Set loading to false in all error cases
+            if (error.code === error.PERMISSION_DENIED) {
+              setLocationError("Permission to access location was denied.");
+              setPermissionDenied(true);
+            } else if (error.code === error.POSITION_UNAVAILABLE) {
+              setLocationError("Location information is unavailable.");
+            } else if (error.code === error.TIMEOUT) {
+              setLocationError("The request to get user location timed out.");
+            } else {
+              setLocationError("An unknown error occurred.");
+            }
           },
           {
             enableHighAccuracy: true,
@@ -100,52 +95,14 @@ const GeoFenceCheck = () => {
       }
     };
 
-    const handleGeolocationError = (error: GeolocationPositionError) => {
-      if (error.code === error.PERMISSION_DENIED) {
-        setLocationError("Permission to access location was denied.");
-        setPermissionDenied(true);
-      } else if (error.code === error.POSITION_UNAVAILABLE) {
-        setLocationError("Location information is unavailable.");
-      } else if (error.code === error.TIMEOUT) {
-        setLocationError("The request to get user location timed out.");
-      } else {
-        setLocationError("An unknown error occurred.");
-      }
-    };
-
     checkGeolocation();
-
-    // Cleanup function to stop watching position
-    return () => {
-      if (watchId) {
-        navigator.geolocation.clearWatch(watchId);
-      }
-    };
-  }, [router, watchId]);
+  }, [router]);
 
   useEffect(() => {
     if (withinBoundary && !loading) {
       playAlertSound();
     }
   }, [withinBoundary, loading]);
-
-  // Open browser settings
-  const openBrowserSettings = () => {
-    window.open("chrome://settings/content/location", "_self");
-  };
-
-  // Open Android location settings
-  const openAndroidLocationSettings = () => {
-    const androidPattern = /Android/i;
-    const match = androidPattern.exec(navigator.userAgent);
-
-    if (match) {
-      window.location.href =
-        "intent://#Intent;action=android.settings.LOCATION_SOURCE_SETTINGS;end";
-    } else {
-      alert("This feature is only available on Android devices.");
-    }
-  };
 
   return (
     <div className="min-h-screen flex items-center justify-center">
@@ -160,7 +117,7 @@ const GeoFenceCheck = () => {
         {loading && (
           <div className="flex flex-col items-center justify-center">
             <svg
-              className="h-12 w-12 text-blue-600 animate-spin"
+              className="h-12 w-12 text-blue-600 animate-spin" // Added animate-spin for visual feedback
               xmlns="http://www.w3.org/2000/svg"
               fill="none"
               viewBox="0 0 24 24"
@@ -191,32 +148,17 @@ const GeoFenceCheck = () => {
             <p className="text-jssorange font-bold text-lg text-center">
               {locationError}
             </p>
+            {/* Show a specific message if permission is denied */}
             {permissionDenied ? (
-              <>
-                <p className="text-gray-500 text-center mt-2">
-                  Please enable location permissions in your browser or device
-                  settings.
-                </p>
-                <div className="mt-4 flex justify-center">
-                  <button
-                    onClick={openBrowserSettings}
-                    className="px-4 py-2 bg-blue-500 text-white rounded-lg mr-2"
-                  >
-                    Open Browser Settings
-                  </button>
-                  <button
-                    onClick={openAndroidLocationSettings}
-                    className="px-4 py-2 bg-green-500 text-white rounded-lg"
-                  >
-                    Open Android Location Settings
-                  </button>
-                </div>
-              </>
+              <p className="text-gray-500 text-center mt-2">
+                Please enable location permissions in your browser settings.
+              </p>
             ) : (
               <>
                 <p className="text-gray-500 text-center mt-2">
                   You need to be inside the SJCE campus to access the website.
                 </p>
+                {/* Show "Redirect anyways" only if the user is not inside the campus and there is no permission issue */}
                 <a
                   href="/home"
                   className="mt-6 px-6 py-3 bg-jssblue text-white rounded-full transition duration-300"
@@ -229,7 +171,7 @@ const GeoFenceCheck = () => {
         )}
 
         {withinBoundary && !loading && (
-          <p className="text-green-600 text-center text-jssblue">
+          <p className="text-green-600+ text-center text-jssblue">
             Authentication success, please wait...
           </p>
         )}
